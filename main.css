@@ -1,11 +1,20 @@
 body {
   margin: 0 0 0 0;
   background-color: #ecf0f1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+#code {
+  text-align: center;
+  margin-top: -200px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 #intro {
   background-image: linear-gradient(#34518b, #c874a8);
+  z-index: 1;
 }
 
 #intro-img {
@@ -14,6 +23,7 @@ body {
   height: 150px;
   width: 100%;
   position: absolute;
+  z-index: 1;
 }
 
 #intro-title {
@@ -44,6 +54,12 @@ body {
   text-align: center;
 }
 
+#text {
+  width: 100%;
+  text-align: center;
+  margin-top: -75px;
+}
+
 h1 {
   font-size: 60px;
   color: white;
@@ -53,5 +69,8 @@ h1 {
 }
 
 p {
-  margin: 0px 100px;
+  padding: 20px 300px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #34495e;
 }

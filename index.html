@@ -1,7 +1,12 @@
 <title>Zeeshan Hanif | Info</title>
+
 <link rel = "stylesheet" type = "text/css" href = "main.css">
-<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<script src="jquery-3.1.1.min.js"></script>
+
+
 
 <div id = "intro">
 
@@ -24,16 +29,24 @@
 
 </div>
 
-<!-- <p>
-  this is a test
-</p> -->
+
+<div id = "code">
+  <img src = "code.png" />
+</div>
+
+<div id = "text">
+  <p>
+    this is a test.
+  </p>
+</div>
 
 <script>
 
-  var h = screen.height - 186;
+  var h = screen.height - 185;
 
   document.getElementById("intro").style.height = h.toString() + "px";
   document.getElementById("intro-img").style.marginTop = (h-150).toString() + "px";
+  document.getElementById("intro-img").style.zIndex = 1;
 
   document.getElementById("name").style.marginTop = (h/2-175).toString() + "px";
   document.getElementById("intro-title").style.marginTop = (h/2-95).toString() + "px";
