@@ -1,18 +1,41 @@
 <title>Zeeshan Hanif | Info</title>
 <link rel = "stylesheet" type = "text/css" href = "main.css">
-<link href = "https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 <div id = "intro">
-  <h1>Zeeshan Hanif</h1>
+
+  <h1 id = "name">Zeeshan Hanif</h1>
+  <h1 id = "intro-title">Developer and Designer</h1>
+
+  <div id = "link-container">
+
+    <a href = "https://github.com/westaboo"><div id = "intro-links">
+      <i class="fa fa-github" aria-hidden="true"></i> &nbsp; GitHub
+    </div></a>
+
+    <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108"><div id = "intro-links">
+      <i class="fa fa-linkedin" aria-hidden="true"></i> &nbsp; LinkedIn
+    </div></a>
+
+  </div>
+
   <div id = "intro-img"></div>
+
 </div>
 
-<p>
-  the
-</p>
+<!-- <p>
+  this is a test
+</p> -->
 
 <script>
+
   var h = screen.height - 186;
+
   document.getElementById("intro").style.height = h.toString() + "px";
   document.getElementById("intro-img").style.marginTop = (h-150).toString() + "px";
+
+  document.getElementById("name").style.marginTop = (h/2-175).toString() + "px";
+  document.getElementById("intro-title").style.marginTop = (h/2-95).toString() + "px";
+
 </script>

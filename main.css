@@ -1,7 +1,7 @@
 body {
   margin: 0 0 0 0;
   background-color: #ecf0f1;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #intro {
@@ -16,11 +16,42 @@ body {
   position: absolute;
 }
 
+#intro-title {
+  font-size: 30px;
+}
+
+#intro-links {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 1px;
+  color: white;
+  font-size: 14px;
+}
+
+#intro-links:hover {
+  background: white;
+  color: #34518b;
+  transition: all .3s ease-in-out;
+}
+
+#link-container {
+  position: absolute;
+  margin-top: 310px;
+  width: 100%;
+  text-align: center;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 50%;
+}
+
+p {
+  margin: 0px 100px;
 }
