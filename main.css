@@ -18,6 +18,11 @@ body {
   height: 100%;
 }
 
+#intro-container {
+  position: relative;
+  top: 15%;
+}
+
 #intro-img {
   background-image: url("intro-bottom.png");
   background-size: 450px 150px;
@@ -31,7 +36,7 @@ body {
 #intro-title {
   font-size: 30px;
   font-weight: 300;
-  top: 30%;
+  margin-top: 115px;
 }
 
 #intro-links {
@@ -56,10 +61,6 @@ body {
   top: 50%;
   width: 100%;
   text-align: center;
-}
-
-#name {
-  top: 15%;
 }
 
 #text {
