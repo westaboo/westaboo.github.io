@@ -13,6 +13,10 @@ body {
   margin-bottom: -25%;
 }
 
+#code-img {
+  width: 62%;
+}
+
 .code-color {
   color: #34495e;
 }
@@ -71,7 +75,7 @@ body {
 #text {
   width: 100%;
   text-align: center;
-  margin-top: 280px;
+  margin-top: 21%;
 }
 
 #timeline {
