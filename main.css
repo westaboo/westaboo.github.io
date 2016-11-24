@@ -15,6 +15,7 @@ body {
 #intro {
   background-image: linear-gradient(#34518b, #c874a8);
   z-index: 1;
+  height: 100%;
 }
 
 #intro-img {
@@ -24,10 +25,13 @@ body {
   width: 100%;
   position: absolute;
   z-index: 1;
+  bottom: 0px;
 }
 
 #intro-title {
   font-size: 30px;
+  font-weight: 300;
+  top: 30%;
 }
 
 #intro-links {
@@ -49,9 +53,13 @@ body {
 
 #link-container {
   position: absolute;
-  margin-top: 310px;
+  top: 50%;
   width: 100%;
   text-align: center;
+}
+
+#name {
+  top: 15%;
 }
 
 #text {
@@ -69,7 +77,8 @@ h1 {
 }
 
 p {
-  padding: 20px 300px;
+  text-align: left;
+  padding: 20px 310px;
   font-size: 30px;
   font-weight: 300;
   color: #34495e;
