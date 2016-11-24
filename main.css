@@ -10,7 +10,7 @@ body {
   z-index: 2;
   bottom: 0px;
   position: absolute;
-  margin-bottom: -325px;
+  margin-bottom: -25%;
 }
 
 .code-color {
