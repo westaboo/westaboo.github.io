@@ -43,7 +43,7 @@ body {
 }
 
 #intro-name {
-
+  font-size: 60px;
 }
 
 #intro-title {
@@ -53,19 +53,17 @@ body {
 }
 
 #intro-links {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 0px 5px;
   display: inline-block;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 1px;
+  padding: 10px 15px;
+  background-color: #50afa1;
+  border-radius: 3px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #intro-links:hover {
-  background: white;
-  color: #34518b;
+  background: #58bdae;
   transition: all .3s ease-in-out;
 }
 
@@ -99,7 +97,6 @@ body {
 }
 
 h1 {
-  font-size: 60px;
   color: white;
   width: 100%;
   text-align: center;
