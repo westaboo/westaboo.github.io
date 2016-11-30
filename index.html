@@ -17,7 +17,9 @@
   <link rel = "stylesheet" type = "text/css" href = "main.css">
 
   <!-- Animations -->
-  <link rel = "stylesheet" type = "text/css" href = "animate/animate.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "animate.css">
+  <script src = "wow.min.js"></script>
+  <script>var wow = new WOW(); wow.init();</script>
 
   <!-- FavIcon for all devices -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -61,13 +63,15 @@
       <div class = "row-fluid intro-link-container">
 
         <a href = "https://github.com/westaboo">
-          <div id = "intro-link" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-4 text-center">
+          <div id = "intro-link" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-4 text-center wow bounce"
+                                 data-wow-delay = ".5s">
             <i class = "fa fa-github" aria-hidden = "true"></i> &nbsp;GitHub
           </div> <!-- end github link -->
         </a>
 
-        <a href = "">
-          <div id = "intro-link" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0 text-center">
+        <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108">
+          <div id = "intro-link" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0 text-center wow bounce"
+                                 data-wow-delay = ".6s">
             <i class = "fa fa-linkedin" aria-hidden = "true"></i> &nbsp;LinkedIn
           </div> <!-- end linkedin link -->
         </a>
@@ -91,7 +95,7 @@
 
   <!-- TEXT AFTER CODE -->
 
-  <div class = "statement-container">
+  <div class = "statement-container wow fadeInUp" data-wow-duration="0.4s">
     <div id = "p-text" class = "statement code-color">
       I am an experienced, insightful programmer and web developer with three years of
       professional experience and over four years of personal experience.
@@ -107,9 +111,9 @@
 
       <!-- FRACTAL DESIGN -->
 
-    	<div class="cd-timeline-block">
-    		<a href = "#"><div class="cd-timeline-img cd-picture">
-    			<img src = "vertical-timeline/img/cd-icon-location.svg" alt="Picture">
+    	<div class = "cd-timeline-block wow slideInUp" data-wow-duration="0.4s">
+    		<a href = ""><div class = "cd-timeline-img cd-picture">
+    			<img src = "vertical-timeline/img/cd-icon-location.svg" alt = "Picture">
     		</div></a> <!-- cd-timeline-img -->
 
     		<div class = "cd-timeline-content direction1" data-class-in = "animated bounce" data-class-out = "animated bounce">
@@ -117,48 +121,47 @@
           <div id = "p-text" class = "timeline-header">(May 2015 - August 2015)</div>
     			Contracted to build a website and online market place for the startup,
           Fractal Tech, based in Granada Hills, CA.
+          <br><br><a href = "" class = "cd-read-more">Read more</a>
     		</div> <!-- cd-timeline-content -->
     	</div> <!-- cd-timeline-block -->
 
 
       <!-- SHLEPPIT -->
 
-      <div class="cd-timeline-block">
-        <a href = "#"><div class="cd-timeline-img cd-picture">
-          <img src = "vertical-timeline/img/cd-icon-location.svg" alt="Picture">
+      <div class="cd-timeline-block wow slideInUp" data-wow-duration="0.4s">
+        <a href = ""><div class = "cd-timeline-img cd-picture">
+          <img src = "vertical-timeline/img/cd-icon-location.svg" alt = "Picture">
         </div></a> <!-- cd-timeline-img -->
 
-        <div class="cd-timeline-content direction2">
+        <div class = "cd-timeline-content direction2">
           <div id = "p-text" class = "timeline-header">Shleppit Mobile Proposal</div>
           <div id = "p-text" class = "timeline-header">(May 2015 - July 2015)</div>
           A European startup, Shleppit, contacted Fractal Tech in order to request my design
           insight for a mobile application they were considering. I designed a mobile UI
           and host the design now on Behance as free inspiration for other graphic designers.
+          <br><br><a href = "" class="cd-read-more">Read more</a>
         </div> <!-- cd-timeline-content -->
       </div> <!-- cd-timeline-block -->
 
 
     <!-- BACKPACK -->
 
-      <div class="cd-timeline-block">
-        <a href = "#"><div class="cd-timeline-img cd-picture">
+      <div class = "cd-timeline-block wow slideInUp" data-wow-duration="0.4s">
+        <a href = ""><div class="cd-timeline-img cd-picture">
           <img src = "vertical-timeline/img/cd-icon-location.svg" alt="Picture">
         </div></a> <!-- cd-timeline-img -->
 
-        <div class="cd-timeline-content direction1">
-          <div id = "p-text" class = "timeline-header">Backpack</div>
+        <div class = "cd-timeline-content direction1">
+          <div id = "p-text" class = "timeline-header">Backpack Mobile Application</div>
           <div id = "p-text" class = "timeline-header">(June 2013 - January 2015)</div>
           Personal project with a group of friends to create a mobile planner and study aid for
           high school students. I worked alone on the design of the application, and the programming
           was done as a group.
+          <br><br><a href = "" class="cd-read-more">Read more</a>
         </div> <!-- cd-timeline-content -->
       </div> <!-- cd-timeline-block -->
 
     </div>
   </div>
-
-
-
-
 
 </div>
