@@ -21,9 +21,15 @@ h2 {
 }
 
 .cd-timeline-content .cd-read-more {
-  float: right;
+  float: left;
   font-size: 14px;
   background-color: #48739d;
+}
+
+@media screen and (min-width: 75em){
+    .cd-timeline-content .cd-read-more {
+        float: right;
+    }
 }
 
 .cd-timeline-content .cd-read-more:hover {
@@ -76,7 +82,13 @@ h2 {
 }
 
 .direction1 {
-  text-align: right;
+  text-align: left;
+}
+
+@media screen and (min-width: 75em){
+    .direction1 {
+        text-align: right;
+    }
 }
 
 .direction2 {
