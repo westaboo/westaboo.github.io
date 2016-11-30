@@ -109,13 +109,22 @@ h2 {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 25px;
   line-height: 36px;
-  z-index: 3;
-  position: relative;
+}
+
+.statement-container {
+  padding-left: 25%;
+  padding-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.statement {
+  width: 65%;
+  text-align: left;
 }
 
 .timeline {
   background-color: #50afa1;
-  margin-top: 185px;
 }
 
 .timeline-header {
