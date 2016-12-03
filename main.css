@@ -67,6 +67,7 @@ h2 {
 #code {
   margin-top: -18%;
   z-index: 2;
+  margin-bottom: -8%;
 }
 
 .code-color {
@@ -94,36 +95,30 @@ h2 {
 
 #intro {
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#34518b, #c874a8);
+  height: 100vh;
+  background-image: url('intro-bottom.png');
+  background-size: contain;
 }
 
-#intro-img {
-  background-image: url("intro-bottom.png");
-  background-size: 450px 150px;
-  height: 150px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  bottom: 0px;
+#intro-code {
+  display: block;
 }
 
-#intro-link {
+.intro-link {
   background-color: #50afa1;
   border-radius: 3px;
   color: white;
   font-size: 16px;
   padding: 10px 15px;
-  margin-top: 4.5%;
   margin-right: 10px;
 }
 
-#intro-link:hover {
+.intro-link:hover {
   background: #58bdae;
   transition: background .3s ease-in-out;
 }
 
-.intro-name {
+#intro-name {
   margin-top: 9%;
 }
 
@@ -152,6 +147,7 @@ h2 {
 .statement {
   width: 65%;
   text-align: left;
+  margin-top: 50px;
 }
 
 .timeline {
@@ -174,6 +170,12 @@ h2 {
   .direction1 {
     text-align: right;
   }
+}
+
+@media only screen and (max-width: 1026px) {
+    #intro-code {
+        display: none;
+    }
 }
 
 @-webkit-keyframes blink {
