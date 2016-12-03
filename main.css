@@ -98,6 +98,7 @@ h2 {
   height: 100vh;
   background-image: url('intro-bottom.png');
   background-size: contain;
+  background-repeat: repeat-x;
 }
 
 #intro-code {
