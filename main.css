@@ -110,13 +110,19 @@ h2 {
   border-radius: 3px;
   color: white;
   font-size: 16px;
-  padding: 10px 15px;
-  margin-right: 10px;
+  padding: 5px 0;
+  margin-right: 6px;
+  margin-top: 50px;
+  line-height: 19px;
 }
 
 .intro-link:hover {
   background: #58bdae;
   transition: background .3s ease-in-out;
+}
+
+#intro-link-container {
+  margin-left: -9px;
 }
 
 #intro-name {
@@ -125,7 +131,7 @@ h2 {
 
 .intro-title {
   margin-top: -20px;
-  margin-left: -6px;
+  margin-left: -4px;
 }
 
 .intro-title-typed {
@@ -151,7 +157,7 @@ h2 {
   margin-top: 50px;
 }
 
-.timeline {
+#timeline {
   background-color: #50afa1;
 }
 
@@ -176,6 +182,12 @@ h2 {
 @media only screen and (max-width: 1026px) {
     #intro-code {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1026px) {
+    .intro-link {
+        margin-top: 10px;
     }
 }
 

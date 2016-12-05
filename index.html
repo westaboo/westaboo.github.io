@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font awesome icons -->
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="includes/font-awesome/css/font-awesome.min.css">
 
   <!-- Bootstrap -->
-  <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "includes/bootstrap/css/bootstrap.min.css">
 
   <!-- Timeline -->
-  <link href = "vertical-timeline/css/style.css" rel = "stylesheet">
+  <link rel = "stylesheet" href = "includes/vertical-timeline/css/style.css">
 
   <!-- My stylesheet -->
   <link rel = "stylesheet" type = "text/css" href = "main.css">
 
   <!-- Animations -->
-  <script src = "typewriter.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "animate.css">
-  <script src = "wow.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "includes/animate.css">
+  <script src = "includes/wow.min.js"></script>
   <script>var wow = new WOW(); wow.init();</script>
 
   <!-- FavIcon for all devices -->
@@ -65,15 +64,27 @@
       <div id = "intro-link-container" class = "row-fluid">
 
         <a href = "https://github.com/westaboo">
-          <div id = "intro-link-1" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-4 text-center intro-link">
-            <i class = "fa fa-github" aria-hidden = "true"></i> &nbsp;GitHub
+          <div class = "col-xs-10 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
+            <i class = "fa fa-github" aria-hidden = "true"></i> <br>GitHub
           </div> <!-- end github link -->
         </a>
 
         <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108">
-          <div id = "intro-link-2" class = "col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0 text-center intro-link">
-            <i class = "fa fa-linkedin" aria-hidden = "true"></i> &nbsp;LinkedIn
+          <div class = "col-xs-10 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+            <i class = "fa fa-linkedin" aria-hidden = "true"></i> <br>LinkedIn
           </div> <!-- end linkedin link -->
+        </a>
+
+        <a href = "#timeline">
+          <div class = "col-xs-10 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+            <i class="fa fa-code-fork" aria-hidden="true"></i> <br>Projects
+          </div> <!-- end projects link -->
+        </a>
+
+        <a href = "pages/resume.html">
+          <div class = "col-xs-10 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+            <i class="fa fa-pencil" aria-hidden="true"></i> <br>Résumé
+          </div> <!-- end resume link -->
         </a>
 
       </div> <!-- end link row -->
@@ -103,7 +114,7 @@
 
   <!-- TIMELINE -->
 
-  <div class = "timeline">
+  <div id = "timeline">
 
     <div id = "cd-timeline">
 
@@ -111,7 +122,7 @@
 
     	<div class = "cd-timeline-block wow fadeInUp" data-wow-duration="0.4s">
     		<a href = ""><div class = "cd-timeline-img cd-picture">
-    			<img src = "vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+    			<img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
     		</div></a> <!-- cd-timeline-img -->
 
     		<div class = "cd-timeline-content direction1">
@@ -127,11 +138,11 @@
 
       <div class="cd-timeline-block wow fadeInUp" data-wow-duration="0.4s">
         <a href = ""><div class = "cd-timeline-img cd-picture">
-          <img src = "vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
         </div></a> <!-- cd-timeline-img -->
 
         <div class = "cd-timeline-content direction2">
-          <div id = "p-text" class = "timeline-header">Shleppit Mobile Proposal <br> (May 2015 - July 2015)</div>
+          <div id = "p-text" class = "timeline-header">Shleppit Mobile Proposal <br> (May 2014 - July 2014)</div>
           A European startup, Shleppit, contacted Fractal Tech in order to request my design
           insight for a mobile application they were considering. I designed a mobile UI
           and host the design now on Behance as free inspiration for other graphic designers.
@@ -144,7 +155,7 @@
 
       <div class = "cd-timeline-block wow fadeInUp" data-wow-duration = "0.4s">
         <a href = ""><div class = "cd-timeline-img cd-picture">
-          <img src = "vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
         </div></a> <!-- cd-timeline-img -->
 
         <div class = "cd-timeline-content direction1">
