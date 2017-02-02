@@ -33,7 +33,7 @@ h2 {
 .cd-timeline-content .cd-read-more:hover {
   text-decoration: none;
   background-color: #628cb7;
-  transition: background .3s ease-in-out;
+  transition: background .2s ease-in-out;
 }
 
 .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
@@ -107,7 +107,7 @@ h2 {
 
 .intro-link {
   background-color: #50afa1;
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   font-size: 16px;
   padding: 5px 0;
@@ -117,8 +117,8 @@ h2 {
 }
 
 .intro-link:hover {
-  background: #58bdae;
-  transition: background .3s ease-in-out;
+  background: #62b7aa;
+  transition: background .2s ease-in-out;
 }
 
 #intro-link-container {
@@ -149,6 +149,8 @@ h2 {
   padding-bottom: 30px;
   width: 100%;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .statement {
@@ -167,6 +169,35 @@ h2 {
   margin: -15px 0 5px 0;
 }
 
+.timeline-navbar {
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  /*background: #489d90;*/
+  background: linear-gradient(#489d90, #50afa1);
+  margin-bottom: -30px;
+  padding: 20px 0;
+}
+
+.timeline-navbar a li {
+  padding: 10px;
+  font-size: 16px;
+  width: 120px;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.timeline-navbar a li:hover {
+  color: #eee;
+  transition: color .1s linear;
+}
+
+.timeline-navbar a:hover {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 75em){
   .cd-timeline-content .cd-read-more {
     float: right;
@@ -183,9 +214,7 @@ h2 {
     #intro-code {
         display: none;
     }
-}
 
-@media only screen and (max-width: 1026px) {
     .intro-link {
         margin-top: 10px;
     }
@@ -201,10 +230,7 @@ h2 {
   50% {
     opacity: 1.0;
   }
-  99% {
-    opacity: 1.0;
-  }
   100% {
-    opacity: 0.0;
+    opacity: 1.0;
   }
 }

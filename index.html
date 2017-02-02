@@ -61,30 +61,28 @@
         <h2 class = "intro-title-typed blink cursor" style = "position: absolute;">|</h2>
       </div>
 
-      <div id = "intro-link-container" class = "row-fluid">
-
         <a href = "https://github.com/westaboo">
-          <div class = "col-xs-4 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
+          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
             <i class = "fa fa-github" aria-hidden = "true"></i> <br>GitHub
-          </div> <!-- end github link -->
+          </div>
         </a>
 
         <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108">
-          <div class = "col-xs-4 col-xs-offset-2 col-md-1 col-md-offset-0 text-center intro-link">
+          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
             <i class = "fa fa-linkedin" aria-hidden = "true"></i> <br>LinkedIn
-          </div> <!-- end linkedin link -->
+          </div>
         </a>
 
         <a href = "#timeline">
-          <div class = "col-xs-4 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
             <i class="fa fa-code-fork" aria-hidden="true"></i> <br>Projects
-          </div> <!-- end projects link -->
+          </div>
         </a>
 
         <a href = "./pages/resume.pdf">
-          <div class = "col-xs-4 col-xs-offset-2 col-md-1 col-md-offset-0 text-center intro-link">
+          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
             <i class="fa fa-pencil" aria-hidden="true"></i> <br>Resume
-          </div> <!-- end resume link -->
+          </div>
         </a>
 
       </div> <!-- end link row -->
@@ -116,76 +114,111 @@
 
   <div id = "timeline">
 
+    <ul class = "timeline-navbar text-center">
+      <a href = "#intro"><li>&#x25B2; Top</li></a>
+      <span style = "color: white; font-size: 16px;">|</span>
+      <a id = "filter-work" onclick = "hideProjects()"><li>Work</li></a>
+      <span style = "color: white; font-size: 16px;">|</span>
+      <a id = "filter-projects" onclick = "hideWork()"><li>Projects</li></a>
+      <span style = "color: white; font-size: 16px;">|</span>
+      <a href = "#end"><li>&#x25BC; Skip</li></a>
+    </ul>
+
     <div id = "cd-timeline">
 
-      <!-- Daomi -->
+      <span id = "work">
 
-      <div class = "cd-timeline-block wow fadeInUp" data-wow-duration="0.4s">
-        <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
-          <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-        </div></a> <!-- cd-timeline-img -->
+        <!-- Daomi -->
 
-        <div class = "cd-timeline-content direction1">
-          <div id = "p-text" class = "timeline-header" >Daomi Design<br> (November 2016 - present)</div>
-          Managed database operations by designing and implementing scalable schemas for various data structures
-          and relationships. Created websites using the Angular framework,
-          and consulted and maintained relationships with clientele.
-          <br><br><a href = "./pages/portfolio/index.html" class = "cd-read-more">Read more</a>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
+        <div class = "cd-timeline-block animated fadeInUp">
+          <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div></a> <!-- cd-timeline-img -->
 
-
-      <!-- FRACTAL DESIGN -->
-
-    	<div class = "cd-timeline-block wow fadeInUp" data-wow-duration="0.4s">
-    		<a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
-    			<img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-    		</div></a> <!-- cd-timeline-img -->
-
-    		<div class = "cd-timeline-content direction2">
-    			<div id = "p-text" class = "timeline-header" >Fractal Tech<br> (May 2015 - August 2015)</div>
-          Led the startup’s website development using the Bootstrap framework. Implemented an online marketplace
-          that allowed users to design a custom phone case and managed payments through the Amazon Payments API.
-          <br><br><a href = "./pages/portfolio/index.html" class = "cd-read-more">Read more</a>
-    		</div> <!-- cd-timeline-content -->
-    	</div> <!-- cd-timeline-block -->
+          <div class = "cd-timeline-content direction1">
+            <div id = "p-text" class = "timeline-header" >Daomi Design<br> (November 2016 - present)</div>
+            Managed database operations by designing and implementing scalable schemas for various data structures
+            and relationships. Created websites using the Angular framework,
+            and consulted and maintained relationships with clientele.
+            <br><br><a href = "./pages/portfolio/index.html" class = "cd-read-more">Read more</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
 
 
-      <!-- SHLEPPIT -->
+        <!-- FRACTAL DESIGN -->
 
-      <div class="cd-timeline-block wow fadeInUp" data-wow-duration="0.4s">
-        <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
-          <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-        </div></a> <!-- cd-timeline-img -->
+      	<div class = "cd-timeline-block animated fadeInUp">
+      		<a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
+      			<img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+      		</div></a> <!-- cd-timeline-img -->
 
-        <div class = "cd-timeline-content direction1">
-          <div id = "p-text" class = "timeline-header">Shleppit Mobile Proposal <br> (May 2014 - July 2014)</div>
-          A European startup, Shleppit, contacted Fractal Tech in order to request my design
-          insight for a mobile application they were considering. I designed a mobile UI
-          and host the design now on Behance as free inspiration for other graphic designers.
-          <br><br><a href = "./pages/portfolio/index.html" class="cd-read-more">Read more</a>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
+      		<div class = "cd-timeline-content direction2">
+      			<div id = "p-text" class = "timeline-header" >Fractal Tech<br> (May 2015 - August 2015)</div>
+            Led the startup’s website development using the Bootstrap framework. Implemented an online marketplace
+            that allowed users to design a custom phone case and managed payments through the Amazon Payments API.
+            <br><br><a href = "./pages/portfolio/index.html" class = "cd-read-more">Read more</a>
+      		</div> <!-- cd-timeline-content -->
+      	</div> <!-- cd-timeline-block -->
 
 
-    <!-- BACKPACK -->
+        <!-- SHLEPPIT -->
 
-      <div class = "cd-timeline-block wow fadeInUp" data-wow-duration = "0.4s">
-        <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
-          <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-        </div></a> <!-- cd-timeline-img -->
+        <div class="cd-timeline-block animated fadeInUp">
+          <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div></a> <!-- cd-timeline-img -->
 
-        <div class = "cd-timeline-content direction2">
-          <div id = "p-text" class = "timeline-header">Backpack Mobile Application <br> (June 2013 - January 2015)</div>
-          Personal project with a group of friends to create a mobile planner and study aid for
-          high school students. I worked alone on the design of the application, and the programming
-          was done as a group.
-          <br><br><a href = "./pages/portfolio/index.html" class="cd-read-more">Read more</a>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
+          <div class = "cd-timeline-content direction1">
+            <div id = "p-text" class = "timeline-header">Shleppit Mobile Proposal <br> (May 2014 - July 2014)</div>
+            A European startup, Shleppit, contacted Fractal Tech in order to request my design
+            insight for a mobile application they were considering. I designed a mobile UI
+            and host the design now on Behance as free inspiration for other graphic designers.
+            <br><br><a href = "./pages/portfolio/index.html" class="cd-read-more">Read more</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+      </span>
+
+
+      <span id = "projects" style = "display: None;">
+
+        <!-- MAL FILTER -->
+
+        <div class = "cd-timeline-block animated fadeInUp">
+          <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div></a> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction1">
+            <div id = "p-text" class = "timeline-header">MAL Filter<br> (December 2016 - present)</div>
+            Ongoing project to develop a content blocker for the popular reference website, MyAnimeList.
+            The goal is for users to block all user-specified reference entries from appearing in their feed.
+            <br><br><a href = "./pages/portfolio/index.html" class="cd-read-more">Read more</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <!-- BACKPACK -->
+
+        <div class = "cd-timeline-block animated fadeInUp">
+          <a href = "./pages/portfolio/index.html"><div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div></a> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction2">
+            <div id = "p-text" class = "timeline-header">Backpack Mobile Application <br> (June 2013 - January 2015)</div>
+            Personal project with a group of friends to create a mobile planner and study aid for
+            high school students. I worked alone on the design of the application, and the programming
+            was done as a group.
+            <br><br><a href = "./pages/portfolio/index.html" class="cd-read-more">Read more</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+      </span>
 
     </div>
   </div>
+
+  <span id = "end"></span>
 
 </div>
 
