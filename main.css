@@ -24,23 +24,6 @@ h2 {
   animation: blink 1.5s infinite;
 }
 
-.cd-timeline-content .cd-read-more {
-  float: left;
-  font-size: 14px;
-  background-color: #48739d;
-}
-
-.cd-timeline-content .cd-read-more:hover {
-  text-decoration: none;
-  background-color: #628cb7;
-  transition: background .2s ease-in-out;
-}
-
-.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-  float: left;
-  font-size: 14px;
-}
-
 #cd-timeline {
   margin-left: 15%;
   margin-right: 15%;
@@ -167,6 +150,7 @@ h2 {
   color: #48739d;
   font-weight: normal;
   margin: -15px 0 5px 0;
+  font-size: 20px;
 }
 
 .timeline-navbar {
