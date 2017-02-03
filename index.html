@@ -51,6 +51,18 @@
 
   <div id = "intro" class = "text-center">
 
+    <div style = "width: 100%; height: auto; position: absolute; z-index: 0; margin-top: 200px;">
+      <marquee behavior="scroll" direction="right" scrollamount="1">
+        <img src = "cloud.png" style = "width: 200px; opacity: 0.25;"/>
+      </marquee>
+    </div>
+
+    <div style = "width: 100%; height: auto; position: absolute; z-index: 0; margin-top: 50px;">
+      <marquee behavior="scroll" direction="left" scrollamount="2">
+        <img src = "cloud.png" style = "width: 300px; opacity: 0.2;"/>
+      </marquee>
+    </div>
+
     <div id = "boucesDown" class = "animated bounceInDown">
       <div id = "intro-name" class = "col-xs-12">
         <h1>Zeeshan Hanif</h1>
@@ -61,27 +73,27 @@
         <h2 class = "intro-title-typed blink cursor" style = "position: absolute;">|</h2>
       </div>
 
-        <a href = "https://github.com/westaboo">
+        <a href = "./pages/resume.pdf">
           <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
-            <i class = "fa fa-github" aria-hidden = "true"></i> <br>GitHub
-          </div>
-        </a>
-
-        <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108">
-          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class = "fa fa-linkedin" aria-hidden = "true"></i> <br>LinkedIn
+            <i class="fa fa-file-text" aria-hidden="true"></i> <br>Resume
           </div>
         </a>
 
         <a href = "#timeline">
-          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class="fa fa-code-fork" aria-hidden="true"></i> <br>Projects
+          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
+            <i class="fa fa-sitemap" aria-hidden="true"></i> <br>Projects
           </div>
         </a>
 
-        <a href = "./pages/resume.pdf">
+        <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108">
+          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+            <i class = "fa fa-linkedin" aria-hidden = "true"></i> <br>LinkedIn
+          </div>
+        </a>
+
+        <a href = "https://github.com/westaboo">
           <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class="fa fa-pencil" aria-hidden="true"></i> <br>Resume
+            <i class = "fa fa-github-alt" aria-hidden = "true"></i> <br>GitHub
           </div>
         </a>
 
@@ -117,7 +129,7 @@
     <ul class = "timeline-navbar text-center">
       <a href = "#intro"><li>&#x25B2; Top</li></a>
       <span style = "color: white; font-size: 16px;">|</span>
-      <a id = "filter-work" onclick = "hideProjects()"><li>Work</li></a>
+      <a id = "filter-work" style = "font-weight: bold;" onclick = "hideProjects()"><li>Work</li></a>
       <span style = "color: white; font-size: 16px;">|</span>
       <a id = "filter-projects" onclick = "hideWork()"><li>Projects</li></a>
       <span style = "color: white; font-size: 16px;">|</span>
