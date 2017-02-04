@@ -4,7 +4,7 @@ intro.style.height = intro.clientHeight.toString() + 'px';
 var introName = document.getElementById('intro-name');
 introName.style.marginTop = (intro.clientHeight * .18).toString() + 'px';
 
-generateClouds(3);
+generateClouds(2);
 
 function hideProjects() {
   event.preventDefault();
@@ -32,13 +32,13 @@ function generateClouds(n) {
 
   var cloud = document.getElementById('clouds');
   for(var i = 0; i < n; ++i) {
+    var cloudtype = ['cloud1.png', 'cloud2.png'][getRandom(0,1)];
     var dir = l[i%2];
-    var size = getRandom(150, 200);
-    var speed = getRandom(1,2);
-    var height = 0;
+    var size = getRandom(100, 250);
+    var speed = Math.round(size/100);
     var el = '<marquee behavior = "scroll" direction = "' + dir +
-      '" scrollamount = "' + speed.toString() + '"><img src = "cloud.png" style = "width: ' +
-      size.toString() + 'px; opacity: 0.2;"/> </marquee>';
+        '" scrollamount = "' + speed.toString() + '"><img src = "' + cloudtype +
+        '" style = "width: ' + size.toString() + 'px; opacity: 0.3; margin-top: 50px;"/> </marquee>';
     cloud.innerHTML += el;
   }
 }
