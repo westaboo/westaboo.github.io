@@ -186,22 +186,18 @@ h2 {
   .cd-timeline-content .cd-read-more {
     float: right;
   }
-}
-
-@media screen and (min-width: 75em){
   .direction1 {
     text-align: right;
   }
 }
 
 @media only screen and (max-width: 1026px) {
-    #intro-code {
-        display: none;
-    }
-
-    .intro-link {
-        margin-top: 10px;
-    }
+  #clouds, #intro-code {
+    display: none;
+  }
+  .intro-link {
+    margin-top: 10px;
+  }
 }
 
 @-webkit-keyframes blink {

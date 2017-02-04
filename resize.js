@@ -34,8 +34,8 @@ function generateClouds(n) {
   for(var i = 0; i < n; ++i) {
     var cloudtype = ['cloud1.png', 'cloud2.png'][getRandom(0,1)];
     var dir = l[i%2];
-    var size = getRandom(100, 250);
-    var speed = Math.round(size/100);
+    var size = getRandom(150,250);
+    var speed = getRandom(1,3);
     var el = '<marquee behavior = "scroll" direction = "' + dir +
         '" scrollamount = "' + speed.toString() + '"><img src = "' + cloudtype +
         '" style = "width: ' + size.toString() + 'px; opacity: 0.3; margin-top: 50px;"/> </marquee>';
