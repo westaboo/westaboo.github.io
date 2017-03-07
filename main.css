@@ -204,17 +204,20 @@ h2 {
   transition: color .1s linear;
 }
 
-@media screen and (min-width: 75em){
+@media only screen and (max-width: 1026px) {
   .cd-timeline-content .cd-read-more {
     float: right;
   }
   .direction1 {
     text-align: right;
   }
-}
-
-@media only screen and (max-width: 1026px) {
   #clouds, #intro-code {
+    display: none;
+  }
+  #contact-info {
+    padding: 20px;
+  }
+  #contact-info div {
     display: none;
   }
   .intro-link {
