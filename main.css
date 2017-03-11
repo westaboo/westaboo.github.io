@@ -1,4 +1,4 @@
-a:hover {
+a:hover, a:focus {
   text-decoration: none;
 }
 
@@ -26,6 +26,18 @@ h2 {
 
 .blink {
   animation: blink 1.5s infinite;
+}
+
+.cd-timeline-content a {
+  background-color: #48739d;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: .2s background ease-in-out;
+}
+
+.cd-timeline-content a:hover {
+  background-color: #5080af;
 }
 
 #cd-timeline {
@@ -64,28 +76,19 @@ h2 {
 
 .code-img {
   display: block;
-  margin: auto;
+  margin: auto auto 20px auto;
 }
 
 #contact-info {
-  padding: 20px 0;
-  font-size: 20px;
-  line-height: 36px;
-  color: #34495e;
-  font-weight: 300;
-}
-
-#contact-info div {
-  margin: 0;
-  background: url('me.jpg');
-  height: 138px;
-  background-size: 138px;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 30px 0;
 }
 
 #contact-info a {
   color: #50afa1;
+}
+
+#contact-info a:hover {
+  color: #62b7aa;
 }
 
 .cursor {
@@ -149,9 +152,46 @@ h2 {
 }
 
 #p-text {
-  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 20px;
   line-height: 36px;
+}
+
+.social-media {
+  padding: 6px 0;
+  border-radius: 25px;
+  width: 50px;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.daomi {
+  border: 2px #fc4f52 solid;
+  color: #fc4f52;
+}
+
+.linkedin {
+  border: 2px #006097 solid;
+  color: #006097;
+}
+
+.behance {
+  border: 2px #1473e6 solid;
+  color: #1473e6;
+}
+
+.daomi:hover {
+  background: #fc4f52;
+  color: white;
+}
+
+.linkedin:hover {
+  background: #006097;
+  color: white;
+}
+
+.behance:hover {
+  background: #1473e6;
+  color: white;
 }
 
 .statement-container {
@@ -166,7 +206,7 @@ h2 {
 .statement {
   width: 65%;
   text-align: left;
-  margin-top: 50px;
+  padding-top: 30px;
 }
 
 #timeline {
@@ -204,20 +244,17 @@ h2 {
   transition: color .1s linear;
 }
 
-@media only screen and (max-width: 1026px) {
-  .cd-timeline-content .cd-read-more {
-    float: right;
-  }
+@media only screen and (min-width: 75em) {
   .direction1 {
     text-align: right;
   }
+}
+
+@media only screen and (max-width: 75em) {
+  .cd-timeline-content .cd-read-more {
+    float: right;
+  }
   #clouds, #intro-code {
-    display: none;
-  }
-  #contact-info {
-    padding: 20px;
-  }
-  #contact-info div {
     display: none;
   }
   .intro-link {
