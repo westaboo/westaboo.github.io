@@ -2,40 +2,6 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0 0 0 0;
-  background-color: white;
-}
-
-h1 {
-  font-family: sans-serif;
-  color: white;
-  font-size: 60px;
-  font-weight: 700;
-  padding-left: 5px;
-}
-
-h2 {
-  font-family: sans-serif;
-  color: white;
-  font-size: 30px;
-  font-weight: 300;
-  padding-left: 5px;
-}
-
-.blink {
-  animation: blink 1.5s infinite;
-}
-
-.cd-timeline-content a {
-  background-color: #48739d;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 3px;
-  transition: .2s background ease-in-out;
-}
-
 .cd-timeline-content a:hover {
   background-color: #5080af;
 }
@@ -49,18 +15,6 @@ h2 {
 
 #cd-timeline::before {
   background: white;
-}
-
-.cd-timeline-content {
-  font-size: 17px;
-  font-weight: 300;
-  color: #2c3e50;
-  box-shadow: none;
-  border-bottom: 4px solid #d7e4ed;
-}
-
-.cd-timeline-img.cd-picture {
-  background-color: #48739d;
 }
 
 #code {
@@ -91,42 +45,8 @@ h2 {
   color: #62b7aa;
 }
 
-.cursor {
-  margin-top: 17px;
-  margin-left: -4px;
-}
-
-.direction1 {
-  text-align: left;
-}
-
-.direction2 {
-  text-align: left;
-}
-
-#intro {
-  width: 100%;
-  height: 100vh;
-  background-image: url('intro-bottom.png');
-  background-size: contain;
-  background-repeat: repeat-x;
-}
-
 #intro-code {
   display: block;
-}
-
-.intro-link {
-  background-color: #50afa1;
-  border-radius: 4px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 5px 0;
-  margin-right: 6px;
-  margin-top: 50px;
-  line-height: 19px;
-  box-shadow: 0px 0px 75px -15px rgba(0,0,0,0.50);
 }
 
 .intro-link:hover {
@@ -138,23 +58,12 @@ h2 {
   margin-left: -9px;
 }
 
-#intro-name {
-  margin-top: 9%;
-}
-
-.intro-title {
-  margin-top: -20px;
-  margin-left: -4px;
-}
-
-.intro-title-typed {
-  display: inline-block;
-}
-
 #p-text {
   font-size: 20px;
   line-height: 36px;
 }
+
+/*CONTACT INFO LINKS START*/
 
 .social-media {
   padding: 6px 0;
@@ -194,6 +103,8 @@ h2 {
   color: white;
 }
 
+/*CONTACT INFO LINKS END*/
+
 .statement-container {
   padding-left: 25%;
   padding-bottom: 30px;
@@ -213,13 +124,6 @@ h2 {
   background: url('timeline-background.gif');
 }
 
-.timeline-header {
-  color: #48739d;
-  font-weight: normal;
-  margin: -15px 0 5px 0;
-  font-size: 20px;
-}
-
 .timeline-navbar {
   width: 100%;
   height: auto;
@@ -232,7 +136,7 @@ h2 {
 .timeline-navbar a li {
   padding: 10px;
   font-size: 16px;
-  width: 120px;
+  width: 90px;
   border-radius: 4px;
   color: white;
   display: inline-block;
@@ -244,35 +148,11 @@ h2 {
   transition: color .1s linear;
 }
 
-@media only screen and (min-width: 75em) {
-  .direction1 {
-    text-align: right;
-  }
-}
-
 @media only screen and (max-width: 75em) {
   .cd-timeline-content .cd-read-more {
     float: right;
   }
-  #clouds, #intro-code {
+  #intro-code {
     display: none;
-  }
-  .intro-link {
-    margin-top: 10px;
-  }
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0.0;
-  }
-  49% {
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    opacity: 1.0;
   }
 }
