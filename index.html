@@ -4,9 +4,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Animations -->
-  <link rel = "stylesheet" type = "text/css" href = "includes/animate.css">
-
   <!-- FavIcon for all devices -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
@@ -52,8 +49,20 @@
       padding-left: 5px;
     }
 
+    .animated {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
     .blink {
       animation: blink 1.5s infinite;
+    }
+
+    .bounceInDown {
+      -webkit-animation-name: bounceInDown;
+      animation-name: bounceInDown;
     }
 
     .cd-timeline-content a {
@@ -76,7 +85,9 @@
     }
 
     .cursor {
-      margin: -86px 0 0 345;
+      display: inline-block;
+      position: absolute;
+      margin: 16px 0 0 -3px;
     }
 
     .direction1 {
@@ -85,6 +96,11 @@
 
     .direction2 {
       text-align: left;
+    }
+
+    .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
     }
 
     #intro {
@@ -103,7 +119,7 @@
       text-transform: uppercase;
       padding: 5px 0;
       margin-right: 6px;
-      margin-top: 10px;
+      margin-top: 6px;
       line-height: 19px;
       box-shadow: 0px 0px 75px -15px rgba(0,0,0,0.50);
     }
@@ -119,6 +135,7 @@
 
     .intro-title-typed {
       margin-bottom: 50px;
+      display: inline-block;
     }
 
     .timeline-header {
@@ -128,6 +145,11 @@
       font-size: 20px;
     }
 
+    .zoomInUp {
+      -webkit-animation-name: zoomInUp;
+      animation-name: zoomInUp;
+    }
+
     @media only screen and (min-width: 75em) {
       .direction1 {
         text-align: right;
@@ -135,8 +157,11 @@
     }
 
     @media only screen and (max-width: 75em) {
-      #clouds {
+      #clouds, .cursor {
         display: none;
+      }
+      .intro-title-typed {
+        margin-bottom: 20px;
       }
     }
 
@@ -152,6 +177,138 @@
       }
       100% {
         opacity: 1.0;
+      }
+    }
+
+    @-webkit-keyframes bounceInDown {
+      from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      }
+
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+      }
+
+      60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+      }
+
+      75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+      }
+
+      90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+      }
+
+      to {
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes bounceInDown {
+      from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      }
+
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+      }
+
+      60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+      }
+
+      75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+      }
+
+      90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+      }
+
+      to {
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @-webkit-keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @-webkit-keyframes zoomInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      }
+
+      60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      }
+    }
+
+    @keyframes zoomInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      }
+
+      60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
       }
     }
   </style>
@@ -179,34 +336,33 @@
         <h2 class = "intro-title-typed blink cursor">|</h2>
       </div>
 
-        <a href = "./pages/resume.pdf" target="_blank">
-          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
-            <i class = "icon-doc-text-inv"></i><br>Resume
-          </div>
-        </a>
+      <a href = "./pages/resume.pdf" target="_blank">
+        <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
+          <i class = "icon-doc-text-inv"></i><br>Resume
+        </div>
+      </a>
 
-        <a href = "#timeline">
-          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class = "icon-sitemap"></i><br>Projects
-          </div>
-        </a>
+      <a href = "#timeline">
+        <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
+          <i class = "icon-sitemap"></i><br>Projects
+        </div>
+      </a>
 
-        <a href = "https://www.linkedin.com/in/zshanif" target="_blank">
-          <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class = "icon-linkedin"></i><br>LinkedIn
-          </div>
-        </a>
+      <a href = "https://www.linkedin.com/in/zshanif" target="_blank">
+        <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
+          <i class = "icon-linkedin"></i><br>LinkedIn
+        </div>
+      </a>
 
-        <a href = "https://github.com/westaboo" target="_blank">
-          <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-            <i class = "icon-github"></i><br>GitHub
-          </div>
-        </a>
+      <a href = "https://github.com/westaboo" target="_blank">
+        <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
+          <i class = "icon-github"></i><br>GitHub
+        </div>
+      </a>
 
     </div> <!-- end link row -->
 
   </div> <!-- end intro -->
-
 
   <!-- IMAGE OF VIM -->
 
@@ -216,7 +372,6 @@
     </div>
   </div>
 
-
   <!-- TEXT AFTER CODE -->
 
   <div class = "statement-container animated fadeInUp">
@@ -225,7 +380,6 @@
       professional experience and over four years of personal experience.
     </div>
   </div>
-
 
   <!-- TIMELINE -->
 
@@ -369,32 +523,8 @@
   </div>
 
   </div>
-  
+
 </body>
 
 <script src = "resize.js"></script>
-
-<script>
-  function loadCSS(href){
-    var ss = window.document.createElement('link'),
-        ref = window.document.getElementsByTagName('head')[0];
-
-    ss.rel = 'stylesheet';
-    ss.href = href;
-
-    // temporarily, set media to something non-matching to ensure it'll
-    // fetch without blocking render
-    ss.media = 'only x';
-
-    ref.parentNode.insertBefore(ss, ref);
-
-    setTimeout( function(){
-      // set media back to `all` so that the stylesheet applies once it loads
-      ss.media = 'all';
-    },0);}
-
-  loadCSS('includes/bootstrap/css/bootstrap.min.css');
-  loadCSS('includes/fontello/css/fontello.css');
-  loadCSS('includes/vertical-timeline/css/style.css');
-  loadCSS('main.css');
-</script>
+<script src = "loadCSS.js"></script>
