@@ -4,18 +4,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Fontello icons -->
-  <link rel= "stylesheet" href="includes/fontello/css/fontello.css">
-
-  <!-- Bootstrap -->
-  <link rel = "stylesheet" type = "text/css" href = "includes/bootstrap/css/bootstrap.min.css">
-
-  <!-- Timeline -->
-  <link rel = "stylesheet" href = "includes/vertical-timeline/css/style.css">
-
-  <!-- My stylesheet -->
-  <link rel = "stylesheet" type = "text/css" href = "main.css">
-
   <!-- Animations -->
   <link rel = "stylesheet" type = "text/css" href = "includes/animate.css">
 
@@ -381,7 +369,32 @@
   </div>
 
   </div>
-
-  <script src = "resize.js"></script>
-
+  
 </body>
+
+<script src = "resize.js"></script>
+
+<script>
+  function loadCSS(href){
+    var ss = window.document.createElement('link'),
+        ref = window.document.getElementsByTagName('head')[0];
+
+    ss.rel = 'stylesheet';
+    ss.href = href;
+
+    // temporarily, set media to something non-matching to ensure it'll
+    // fetch without blocking render
+    ss.media = 'only x';
+
+    ref.parentNode.insertBefore(ss, ref);
+
+    setTimeout( function(){
+      // set media back to `all` so that the stylesheet applies once it loads
+      ss.media = 'all';
+    },0);}
+
+  loadCSS('includes/bootstrap/css/bootstrap.min.css');
+  loadCSS('includes/fontello/css/fontello.css');
+  loadCSS('includes/vertical-timeline/css/style.css');
+  loadCSS('main.css');
+</script>
