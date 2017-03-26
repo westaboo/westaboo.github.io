@@ -1,5 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
 a:hover, a:focus {
   text-decoration: none;
+}
+
+.cd-timeline-content {
+  font-size: 17px;
+  font-weight: 300;
+  color: #2c3e50;
+  box-shadow: none;
+  border-bottom: 4px solid #d7e4ed;
+}
+
+.cd-timeline-content a {
+  background-color: #48739d;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: .2s background;
 }
 
 .cd-timeline-content a:hover {
@@ -50,12 +70,7 @@ a:hover, a:focus {
 }
 
 .intro-link:hover {
-  background: #62b7aa;
-  transition: background .2s ease-in-out;
-}
-
-#intro-link-container {
-  margin-left: -9px;
+  background: #8b87ad;
 }
 
 #p-text {
@@ -141,11 +156,11 @@ a:hover, a:focus {
   color: white;
   display: inline-block;
   cursor: pointer;
+  transition: color .1s linear;
 }
 
 .timeline-navbar a li:hover {
   color: #eee;
-  transition: color .1s linear;
 }
 
 @media only screen and (max-width: 75em) {

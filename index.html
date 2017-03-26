@@ -65,21 +65,6 @@
       animation-name: bounceInDown;
     }
 
-    .cd-timeline-content a {
-      background-color: #48739d;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 3px;
-    }
-
-    .cd-timeline-content {
-      font-size: 17px;
-      font-weight: 300;
-      color: #2c3e50;
-      box-shadow: none;
-      border-bottom: 4px solid #d7e4ed;
-    }
-
     .cd-timeline-img.cd-picture {
       background-color: #48739d;
     }
@@ -87,7 +72,7 @@
     .cursor {
       display: inline-block;
       position: absolute;
-      margin: 16px 0 0 -3px;
+      margin-top: -4px !important;
     }
 
     .direction1 {
@@ -112,36 +97,27 @@
     }
 
     .intro-link {
-      background-color: #50afa1;
-      border-radius: 4px;
       color: white;
       font-size: 14px;
       text-transform: uppercase;
-      padding: 5px 0;
-      margin-right: 6px;
-      margin-top: 6px;
-      line-height: 19px;
-      box-shadow: 0px 0px 75px -15px rgba(0,0,0,0.50);
+      padding: 8px 12px 3px 12px;
+      line-height: 27px;
+      transition: .2s all;
     }
 
     #intro-name {
       margin-top: 9%;
     }
 
-    .intro-title {
-      margin-top: -20px;
-      margin-left: -4px;
-    }
-
     .intro-title-typed {
-      margin-bottom: 50px;
+      margin: auto 0 50px -5px;
       display: inline-block;
     }
 
     .timeline-header {
       color: #48739d;
       font-weight: normal;
-      margin: -15px 0 5px 0;
+      margin-bottom: 5px;
       font-size: 20px;
     }
 
@@ -156,7 +132,7 @@
       }
     }
 
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 50em) {
       #clouds, .cursor {
         display: none;
       }
@@ -251,28 +227,20 @@
     @-webkit-keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
       }
 
       to {
         opacity: 1;
-        -webkit-transform: none;
-        transform: none;
       }
     }
 
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
       }
 
       to {
         opacity: 1;
-        -webkit-transform: none;
-        transform: none;
       }
     }
 
@@ -331,7 +299,7 @@
         <h1>Zeeshan Hanif</h1>
       </div>
 
-      <div class = "col-xs-12 intro-title" style = "z-index: 2;">
+      <div class = "col-xs-12" style = "z-index: 2;">
         <h2 class = "intro-title-typed"> &nbsp;Developer and Designer</h2>
         <h2 class = "intro-title-typed blink cursor">|</h2>
       </div>
@@ -505,26 +473,27 @@
     </div>
   </div>
 
-  <span id = "end"></span>
+  <section id = "end">
 
-  <div id = "contact-info" class = "text-center">
-    <div id = "p-text" class = "code-color">
-      Like what I do?<br>
-      Consider commissioning me to build your website.<br>
+    <div id = "contact-info" class = "text-center">
+      <div id = "p-text" class = "code-color">
+        Like what I do?<br>
+        Consider commissioning me to build your website.<br>
 
-      Email me at <a href = "mailto:zhanif@uci.edu">zhanif@uci.edu</a><br>
-      or <a href = "http://www.daomidesign.com/">send a message to my employer</a>
-      for questions.
-    </div><br>
+        Email me at <a href = "mailto:zhanif@uci.edu">zhanif@uci.edu</a><br>
+        or <a href = "http://www.daomidesign.com/">send a message to my employer</a>
+        for questions.
+      </div><br>
 
-    <a href = "https://www.behance.net/zshanif" target="_blank"><div id = "p-text" class = "social-media behance">Be</div></a>
-    <a href = "http://www.daomidesign.com/" target="_blank"><div id = "p-text" class = "social-media daomi">Da</div></a>
-    <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108" target="_blank"><div id = "p-text" class = "social-media linkedin">in</div></a>
-  </div>
+      <a href = "https://www.behance.net/zshanif" target="_blank"><div id = "p-text" class = "social-media behance">Be</div></a>
+      <a href = "http://www.daomidesign.com/" target="_blank"><div id = "p-text" class = "social-media daomi">Da</div></a>
+      <a href = "https://www.linkedin.com/in/zeeshan-hanif-336517108" target="_blank"><div id = "p-text" class = "social-media linkedin">in</div></a>
+    </div>
+
+  </section>
 
   </div>
 
 </body>
 
-<script src = "resize.js"></script>
-<script src = "loadCSS.js"></script>
+<script src = "app.js"></script>
