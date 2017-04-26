@@ -1,0 +1,203 @@
+<title>Design Philosophy</title>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FavIcon for all devices -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 50px;
+  }
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .black {
+    color: #2c3e50;
+  }
+
+  .blink {
+    animation: blink 2s infinite;
+  }
+
+  .button {
+    width: 150px;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 5px 10px;
+    font-family: sans-serif;
+    border: 2px solid #8b6698;
+  }
+
+  .button:hover {
+    cursor: pointer;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+  }
+
+  .first::before {
+    content: 'DESIGN PHILOSOPHY';
+    position: absolute;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    border-top: 2px solid #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding: 10px 4px;
+    color: #2c3e50;
+  }
+
+  .first::after {
+    content: '\25BC';
+    color: #2c3e50;
+    position: absolute;
+    bottom: 40px;
+    transition: .2s all;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    animation: blink 2s infinite;
+  }
+
+  .heavy-button {
+    color: #8b6698;
+  }
+
+  .heavy-button:hover {
+    background: #8b6698;
+    color: white;
+  }
+
+  .light-button {
+    background: #8b6698;
+    transition: .2s background;
+    color: white;
+  }
+
+  .light-button:hover {
+    background: #9775a3;
+    border: 2px solid #9775a3;
+  }
+
+  .page {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-size: 100px;
+  }
+
+  .page-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0 15%;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0.0;
+    }
+    49% {
+      opacity: 0.0;
+    }
+    50% {
+      opacity: 1.0;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 75em) {
+    .first::before, .first::after {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+  <div class = "page first animated fade" style = "box-shadow: inset 0px 0px 156px -49px rgba(139,102,152,1);">
+    <div class = "page-content">
+      <h1 class = "black">Light transitions are gradual.<br>Heavy transitions occur instantly.<br></h1><br><br>
+      <div class = "button light-button">Light</div>
+      <div class = "button heavy-button">Heavy</div>
+    </div>
+  </div>
+
+  <div class = "page" style="background-image: url('design-background.gif'); box-shadow: inset 0px 0px 156px 0px rgba(139,102,152,1);">
+    <div class = "page-content">
+      <h1 class = "white">Colored backgrounds are<br>patterned and dynamic.</h1>
+    </div>
+  </div>
+
+  <div class = "page" style="box-shadow: inset 0px 0px 156px -49px rgba(51,83,135,1);">
+    <div class = "page-content">
+      <h1 class = "black">
+        Some page content on the page should be moving or
+        should have been moving<span class = "blink" style = "position: absolute; margin-top: -3px;">|</span>
+      </h1>
+    </div>
+  </div>
+</body>

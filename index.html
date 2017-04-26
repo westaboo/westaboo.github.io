@@ -35,7 +35,6 @@
 
     h1 {
       font-family: sans-serif;
-      color: white;
       font-size: 60px;
       font-weight: 700;
       padding-left: 5px;
@@ -43,7 +42,6 @@
 
     h2 {
       font-family: sans-serif;
-      color: white;
       font-size: 30px;
       font-weight: 300;
       padding-left: 5px;
@@ -83,9 +81,9 @@
       text-align: left;
     }
 
-    .fadeInUp {
-      -webkit-animation-name: fadeInUp;
-      animation-name: fadeInUp;
+    .fade {
+      -webkit-animation-name: fade;
+      animation-name: fade;
     }
 
     #intro {
@@ -229,7 +227,7 @@
       }
     }
 
-    @-webkit-keyframes fadeInUp {
+    @-webkit-keyframes fade {
       from {
         opacity: 0;
       }
@@ -239,7 +237,7 @@
       }
     }
 
-    @keyframes fadeInUp {
+    @keyframes fade {
       from {
         opacity: 0;
       }
@@ -347,11 +345,16 @@
 
   <!-- TEXT AFTER CODE -->
 
-  <div class = "statement-container animated fadeInUp">
+  <div class = "statement-container animated fade">
     <div id = "p-text" class = "statement code-color">
       I am an experienced, insightful programmer and web developer with three years of
       professional experience and over four years of personal experience.
     </div>
+  </div>
+
+  <div class = "statement-link-container">
+    <a href = "pages/design.html"><div class = "statement-link statement-purple">Design Philosophy</div></a>
+    <a><div class = "statement-link statement-green" onclick="alert('Under construction');" style = "cursor: pointer;">Coding Philosophy</div></a>
   </div>
 
   <!-- TIMELINE -->
@@ -374,7 +377,7 @@
 
         <!-- DAOMI -->
 
-        <div class = "cd-timeline-block animated fadeInUp">
+        <div class = "cd-timeline-block animated fade">
           <div class = "cd-timeline-img cd-picture">
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->
@@ -390,7 +393,7 @@
 
         <!-- FRACTAL DESIGN -->
 
-      	<div class = "cd-timeline-block animated fadeInUp">
+      	<div class = "cd-timeline-block animated fade">
       		<div class = "cd-timeline-img cd-picture">
       			<img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
       		</div> <!-- cd-timeline-img -->
@@ -406,7 +409,7 @@
 
         <!-- SHLEPPIT -->
 
-        <div class="cd-timeline-block animated fadeInUp">
+        <div class="cd-timeline-block animated fade">
           <div class = "cd-timeline-img cd-picture">
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->
@@ -425,14 +428,30 @@
 
       <span id = "projects" style = "display: None;">
 
-        <!-- ROBOTO OR NOTTO -->
+        <!-- MAL FILTER -->
 
-        <div class = "cd-timeline-block animated fadeInUp">
+        <div class = "cd-timeline-block animated fade">
           <div class = "cd-timeline-img cd-picture">
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->
 
           <div class = "cd-timeline-content direction1">
+            <div class = "timeline-header">MAL Filter<br> (December 2016 - April 2016)</div>
+            Project to develop a content filtering Chrome extension for the popular reference website, MyAnimeList.
+            Users can block all specified reference entry patterns from appearing in their feed. Other small tweaks
+            to make filtering less noticeable and seamless are togglable.<br><br>
+            <a href = "https://github.com/westaboo/MyAnimeList-Filter" target="_blank">View the code</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <!-- ROBOTO OR NOTTO -->
+
+        <div class = "cd-timeline-block animated fade">
+          <div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction2">
             <div class = "timeline-header">Roboto or Notto<br> (March 2017)</div>
             Project with a group of three other students at Caltech. The end goal was to create a
             game where users are pitted against either a bot or another human and must decide if their opponent
@@ -442,24 +461,9 @@
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
-        <!-- MAL FILTER -->
-
-        <div class = "cd-timeline-block animated fadeInUp">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction2">
-            <div class = "timeline-header">MAL Filter<br> (December 2016 - present)</div>
-            Ongoing project to develop a content blocker for the popular reference website, MyAnimeList.
-            The goal is for users to block all user-specified reference entries from appearing in their feed.<br><br>
-            <a href = "https://github.com/westaboo/MyAnimeList-Filter" target="_blank">View the code</a>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
         <!-- BACKPACK -->
 
-        <div class = "cd-timeline-block animated fadeInUp">
+        <div class = "cd-timeline-block animated fade">
           <div class = "cd-timeline-img cd-picture">
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->

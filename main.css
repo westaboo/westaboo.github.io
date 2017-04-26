@@ -6,6 +6,10 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+h1, h2 {
+  color: white;
+}
+
 .cd-timeline-content {
   font-size: 17px;
   font-weight: 300;
@@ -133,6 +137,44 @@ a:hover, a:focus {
   width: 65%;
   text-align: left;
   padding-top: 30px;
+}
+
+.statement-purple {
+  border: 2px solid #8b6698;
+  color: #8b6698;
+}
+
+.statement-purple:hover {
+  background-color: #8b6698;
+}
+
+.statement-green {
+  border: 2px solid #00b1a2;
+  color: #00b1a2;
+}
+
+.statement-green:hover {
+  background-color: #00b1a2;
+}
+
+.statement-link {
+  padding: 10px 0px;
+  font-size: 14px;
+  width: 240px;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 20px 50px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.statement-link:hover {
+  color: white;
+}
+
+.statement-link-container {
+  text-align: center;
 }
 
 #timeline {
