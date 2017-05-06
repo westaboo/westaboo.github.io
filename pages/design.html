@@ -30,7 +30,7 @@
     margin: 0;
   }
 
-  h1 {
+  h1, .editor {
     font-size: 42px;
     font-family: sans-serif;
     font-weight: 300;
@@ -61,11 +61,22 @@
     display: inline-block;
     margin: 5px 10px;
     font-family: sans-serif;
-    border: 2px solid #8b6698;
+    border: 2px solid #00b1a2;
   }
 
   .button:hover {
     cursor: pointer;
+  }
+
+  .editor {
+    border: none;
+    width: 100%;
+    resize: none;
+    text-align: center;
+  }
+
+  .editor:focus {
+    outline: none;
   }
 
   .fade {
@@ -97,30 +108,30 @@
   }
 
   .heavy-button {
-    color: #8b6698;
+    color: #00b1a2;
   }
 
   .heavy-button:hover {
-    background: #8b6698;
+    background: #00b1a2;
     color: white;
   }
 
   .light-button {
-    background: #8b6698;
-    transition: .2s background;
+    background: #00b1a2;
+    transition: .3s background;
     color: white;
   }
 
   .light-button:hover {
-    background: #9775a3;
-    border: 2px solid #9775a3;
+    background: #03b7a8;
+    border: 2px solid #03b7a8;
   }
 
   .page {
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-size: 100px;
+    background-size: auto 300px;
   }
 
   .page-content {
@@ -178,7 +189,7 @@
 </style>
 
 <body>
-  <div class = "page first animated fade" style = "box-shadow: inset 0px 0px 156px -49px rgba(139,102,152,1);">
+  <div class = "page first animated fade" style = "box-shadow: inset 0px 0px 156px -30px rgba(0,177,162,0.5);">
     <div class = "page-content">
       <h1 class = "black">Light transitions are gradual.<br>Heavy transitions occur instantly.<br></h1><br><br>
       <div class = "button light-button">Light</div>
@@ -186,18 +197,18 @@
     </div>
   </div>
 
-  <div class = "page" style="background-image: url('design-background.gif'); box-shadow: inset 0px 0px 156px 0px rgba(139,102,152,1);">
+  <div class = "page" style = "background-image: url('design-background.gif');
+                               box-shadow: inset 0px 0px 156px -30px rgba(0,0,0,1);
+                               -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: black;">
     <div class = "page-content">
-      <h1 class = "white">Colored backgrounds are<br>patterned and dynamic.</h1>
+      <h1 class = "white" style = "font-weight: bold; text-shadow: 0px 0px 1px black;">Colored backgrounds are<br>patterned and dynamic.</h1>
     </div>
   </div>
 
-  <div class = "page" style="box-shadow: inset 0px 0px 156px -49px rgba(51,83,135,1);">
+  <div class = "page" style="box-shadow: inset 0px 0px 156px -30px rgba(0,177,162,0.5);">
     <div class = "page-content">
-      <h1 class = "black">
-        Some page content on the page should be moving or
-        should have been moving.<span class = "blink" style = "position: absolute; margin-top: -3px;">|</span>
-      </h1>
+      <textarea class = "editor" rows = "2"
+      >Content on the page should be dynamic or interactive (click to edit this content)</textarea>
     </div>
   </div>
 </body>
