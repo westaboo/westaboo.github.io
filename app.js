@@ -16,7 +16,8 @@ function loadCSS(href){
   setTimeout( function(){
     // set media back to `all` so that the stylesheet applies once it loads
     ss.media = 'all';
-  },0);}
+  },0);
+}
 
 loadCSS('includes/bootstrap/css/bootstrap.min.css');
 loadCSS('includes/fontello/css/fontello.css');
