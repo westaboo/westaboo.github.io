@@ -62,11 +62,8 @@ h1, h2 {
 }
 
 #contact-info a {
-  color: #50afa1;
-}
-
-#contact-info a:hover {
-  color: #62b7aa;
+  color: #00b1a2;
+  font-weight: 400;
 }
 
 #intro-code {
@@ -79,7 +76,7 @@ h1, h2 {
 
 #p-text {
   font-size: 20px;
-  line-height: 36px;
+  line-height: calc(12px + 1.5vw);
 }
 
 /*CONTACT INFO LINKS START*/
@@ -160,10 +157,10 @@ h1, h2 {
 .statement-link {
   padding: 10px 0px;
   font-size: 14px;
-  width: 240px;
+  width: 210px;
   text-align: center;
   display: inline-block;
-  margin: 5px 20px;
+  margin: 5px 15px;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 3px;

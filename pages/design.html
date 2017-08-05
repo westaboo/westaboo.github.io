@@ -4,7 +4,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../includes/bootstrap/css/bootstrap.min.css">
 
   <!-- FavIcon for all devices -->
   <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
@@ -28,6 +28,10 @@
 </head>
 
 <style>
+  html {
+    background: ghostWhite;
+  }
+
   body {
     margin: 0;
   }
@@ -85,12 +89,13 @@
   .first::before {
     content: 'DESIGN PHILOSOPHY';
     position: absolute;
+    letter-spacing: 5px;
     margin-top: 40px;
     transform: translateX(-50%);
     font-family: sans-serif;
     border-top: 2px solid #2c3e50;
     border-bottom: 2px solid #2c3e50;
-    padding: 10px 4px;
+    padding: 10px 0px 10px 3px;
     color: #2c3e50;
   }
 
@@ -116,13 +121,13 @@
 
   .light-button {
     background: #00b1a2;
-    transition: .3s background;
+    transition: .3s all;
     color: white;
   }
 
   .light-button:hover {
-    background: #03b7a8;
-    border: 2px solid #03b7a8;
+    background: #03bbac;
+    border: 2px solid #03bbac;
   }
 
   .page {
@@ -130,6 +135,7 @@
     height: 100vh;
     text-align: center;
     background-size: auto 300px;
+    background: ghostWhite;
   }
 
   .page-content {
@@ -187,7 +193,7 @@
 </style>
 
 <body>
-  <div class = "page first animated fade" style = "box-shadow: inset 0px 0px 156px -30px rgba(0,177,162,0.5);">
+  <div class = "page first animated fade">
     <div class = "page-content">
       <h1 class = "black">Light transitions are gradual.<br>Heavy transitions occur instantly.<br></h1><br><br>
       <div class = "button light-button">Light</div>
@@ -195,15 +201,15 @@
     </div>
   </div>
 
-  <div class = "page" style = "background-image: url('design-background.gif'); box-shadow: inset 0px 0px 156px -30px black;">
+  <div class = "page" style = "background-image: url('../timeline-background.gif');">
     <div class = "page-content">
-      <h1 class = "white" style = "text-shadow: 0px 0px 8px black;">
+      <h1 class = "white">
         Colored backgrounds are<br>patterned and dynamic.
       </h1>
     </div>
   </div>
 
-  <div class = "page" style="box-shadow: inset 0px 0px 156px -30px rgba(0,177,162,0.5);">
+  <div class = "page">
     <div class = "page-content">
       <h1 class = "black">
           Content on the page should move<br>or should have been moving.

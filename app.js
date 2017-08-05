@@ -19,7 +19,6 @@ function loadCSS(href){
   },0);
 }
 
-loadCSS('includes/bootstrap/css/bootstrap.min.css');
 loadCSS('includes/fontello/css/fontello.css');
 loadCSS('includes/vertical-timeline/css/style.css');
 loadCSS('main.css');
@@ -27,9 +26,7 @@ loadCSS('main.css');
 
 // Generate background
 
-var intro = document.getElementById('intro');
-intro.style.height = intro.clientHeight.toString() + 'px';
-
+intro.style.height = window.innerHeight.toString() + 'px';
 var introName = document.getElementById('intro-name');
 introName.style.marginTop = (intro.clientHeight * .18).toString() + 'px';
 
@@ -66,7 +63,7 @@ function generateClouds(n) {
     var size = getRandom(150,250);
     var speed = getRandom(1,3);
     var el = '<marquee behavior = "scroll" direction = "' + dir +
-        '" scrollamount = "' + speed.toString() + '"><img src = "' + cloudtype +
+        '" scrollamount = "' + speed.toString() + '"><img draggable=false src = "' + cloudtype +
         '" style = "width: ' + size.toString() + 'px; opacity: 0.3; margin-top: 50px;"/> </marquee>';
     cloud.innerHTML += el;
   }
