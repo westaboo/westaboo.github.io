@@ -2,54 +2,52 @@
 
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
   <!-- FavIcon for all devices -->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel = "apple-touch-icon" sizes = "57x57" href = "favicons/apple-icon-57x57.png">
+  <link rel = "apple-touch-icon" sizes = "60x60" href = "favicons/apple-icon-60x60.png">
+  <link rel = "apple-touch-icon" sizes = "72x72" href = "favicons/apple-icon-72x72.png">
+  <link rel = "apple-touch-icon" sizes = "76x76" href = "favicons/apple-icon-76x76.png">
+  <link rel = "apple-touch-icon" sizes = "114x114" href = "favicons/apple-icon-114x114.png">
+  <link rel = "apple-touch-icon" sizes = "120x120" href = "favicons/apple-icon-120x120.png">
+  <link rel = "apple-touch-icon" sizes = "144x144" href = "favicons/apple-icon-144x144.png">
+  <link rel = "apple-touch-icon" sizes = "152x152" href = "favicons/apple-icon-152x152.png">
+  <link rel = "apple-touch-icon" sizes = "180x180" href = "favicons/apple-icon-180x180.png">
+  <link rel = "icon" type = "image/png" sizes = "192x192"  href = "favicons/android-icon-192x192.png">
+  <link rel = "icon" type = "image/png" sizes = "32x32" href = "favicons/favicon-32x32.png">
+  <link rel = "icon" type = "image/png" sizes = "96x96" href = "favicons/favicon-96x96.png">
+  <link rel = "icon" type = "image/png" sizes = "16x16" href = "favicons/favicon-16x16.png">
+  <link rel = "manifest" href = "favicons/manifest.json">
+  <meta name = "msapplication-TileColor" content = "#ffffff">
+  <meta name = "msapplication-TileImage" content = "/ms-icon-144x144.png">
+  <meta name = "theme-color" content = "#ffffff">
 
   <!-- BOOTSTRAP -->
-  <link rel="stylesheet" type="text/css" href="includes/bootstrap/css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "includes/bootstrap/css/bootstrap.min.css">
 
   <!-- CRITICAL CSS FOR MOBILE OPTIMIZATION -->
 
   <style>
     html, div.container {
       background: ghostWhite;
+      font-family: sans-serif;
     }
 
     body {
-      font-family: sans-serif;
       margin: 0 0 0 0;
       background-color: white;
     }
 
     h1 {
-      font-family: sans-serif;
       font-size: 60px;
       font-weight: 700;
       padding-left: 5px;
     }
 
     h2 {
-      font-family: sans-serif;
       font-size: 30px;
-      font-weight: 300;
+      font-weight: 300 !important;
       padding-left: 5px;
     }
 
@@ -70,7 +68,7 @@
     }
 
     .cd-timeline-img.cd-picture {
-      background-color: #48739d;
+      background-color: #48739d !important;
     }
 
     .cursor {
@@ -100,18 +98,21 @@
       color: white;
     }
 
+    .intro-link-container {
+      padding: 4px !important;
+    }
+
     .intro-link {
       color: white;
       font-size: 14px;
-      background: #50afa1;
+      background: #3cbba8;
       text-transform: uppercase;
-      border-radius: 4px;
-      margin-top: 5px;
-      margin-right: 5px;
-      padding: 5px 5px 0px 5px;
-      line-height: 27px;
+      border-radius: 2px;
+      width: 100%;
+      font-weight: bold;
+      padding: 10px 0 7px 0;
       box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.25);
-      transition: .2s all;
+      transition: .3s all;
     }
 
     #intro-name {
@@ -119,7 +120,7 @@
     }
 
     .intro-title-typed {
-      margin: auto 0 50px -5px;
+      margin: auto 0 50px;
       display: inline-block;
     }
 
@@ -313,27 +314,35 @@
         <h2 class = "intro-title-typed blink cursor">|</h2>
       </div>
 
-      <a href = "./pages/resume.pdf" target="_blank">
-        <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-4 text-center intro-link">
-          <i class = "icon-doc-text-inv"></i><br>Resume
+      <a href = "./resume.pdf" target="_blank">
+        <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-2 text-center intro-link-container">
+          <div class = "intro-link">
+            <i class = "fas fa-file-alt"></i><br>Resume
+          </div>
         </div>
       </a>
 
       <a href = "#timeline">
-        <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-          <i class = "icon-sitemap"></i><br>Projects
+        <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
+          <div class = "intro-link">
+            <i class = "fas fa-sitemap"></i><br>Projects
+          </div>
         </div>
       </a>
 
-      <a href = "https://www.linkedin.com/in/zshanif" target="_blank">
-        <div class = "col-xs-5 col-xs-offset-1 col-md-1 col-md-offset-0 text-center intro-link">
-          <i class = "icon-linkedin"></i><br>LinkedIn
+      <a href = "https://www.linkedin.com/in/zshanif">
+        <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-0 text-center intro-link-container">
+          <div class = "intro-link">
+            <i class="fab fa-linkedin-in"></i><br>LinkedIn
+          </div>
         </div>
       </a>
 
-      <a href = "https://github.com/westaboo" target="_blank">
-        <div class = "col-xs-5 col-xs-offset-0 col-md-1 col-md-offset-0 text-center intro-link">
-          <i class = "icon-github"></i><br>GitHub
+      <a href = "https://github.com/westaboo">
+        <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
+          <div class = "intro-link">
+            <i class = "fab fa-github"></i><br>GitHub
+          </div>
         </div>
       </a>
 
@@ -351,17 +360,20 @@
 
   <!-- TEXT AFTER CODE -->
 
-  <div class = "statement-container animated fade">
+  <div class = "statement-container animated fade col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
     <div id = "p-text" class = "statement code-color">
-      I am an experienced, insightful programmer and web developer with three years of
-      professional experience and over four years of personal experience.
+      I am an experienced software developer and hobbyist graphic designer with
+      two years of professional experience and over six years of personal experience.
     </div>
   </div>
 
-  <div class = "statement-link-container">
-    <a href = "pages/design.html"><div class = "statement-link statement-green">Design Philosophy</div></a>
-    <a><div class = "statement-link statement-purple" onclick="alert('Under construction');" style = "cursor: pointer;">Coding Philosophy</div></a>
-    <br><br><br><br>
+  <div class = "statement-link-container row">
+    <div class = "code-color statement-footer-text col-xs-12" style = "margin-bottom: 20px;">
+      I build, test, deploy, and maintain
+    </div><br>
+    <div class = "statement-link statement-green col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-3">Responsive Apps</div>
+    <div class = "code-color statement-footer-text col-xs-12 col-md-2">&mdash;&nbsp;&nbsp;&nbsp;using&nbsp;&nbsp;&nbsp;&mdash;</div>
+    <div class = "statement-link statement-purple col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">Minimal Design</div>
   </div>
 
   <!-- TIMELINE -->
@@ -382,6 +394,39 @@
 
       <span id = "work">
 
+        <!-- ALCATEL-LUCENT ENTERPRISE 2 -->
+
+        <div class = "cd-timeline-block animated fade">
+          <div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction1">
+            <div class = "timeline-header">Alcatel­-Lucent Enterprise<br> (October 2017 - June 2018)</div>
+            Tasked to refresh the web interface of our network switch lineup to make use of the REST API
+            and Angular framework. Took part in initial schema plans, alongside other engineers from
+            Southern California and France, where workload was assessed and a requirements document was
+            produced.
+
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <!-- ALCATEL-LUCENT ENTERPRISE 1 -->
+
+        <div class = "cd-timeline-block animated fade">
+          <div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction2">
+            <div class = "timeline-header">Alcatel­-Lucent Enterprise<br> (July 2017 - October 2017)</div>
+            Developed a ticketing platform focused on logging employee behaviors and estimating work
+            completion percentage. Allowed the company to function more efficiently when dealing with
+            bug reports and resource allocation.
+
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
         <!-- DAOMI -->
 
         <div class = "cd-timeline-block animated fade">
@@ -390,28 +435,12 @@
           </div> <!-- cd-timeline-img -->
 
           <div class = "cd-timeline-content direction1">
-            <div class = "timeline-header" >Daomi Design<br> (November 2016 - May 2017)</div>
+            <div class = "timeline-header">Daomi Design<br> (November 2016 - May 2017)</div>
             Managed database operations by designing and implementing scalable schemas for various data structures
             and relationships. Created websites using the Angular framework,
             and consulted and maintained relationships with clientele.
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
-
-        <!-- FRACTAL DESIGN -->
-
-      	<div class = "cd-timeline-block animated fade">
-      		<div class = "cd-timeline-img cd-picture">
-      			<img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-      		</div> <!-- cd-timeline-img -->
-
-      		<div class = "cd-timeline-content direction2">
-      			<div class = "timeline-header" >Fractal Tech<br> (May 2015 - August 2015)</div>
-            Led the startup's website development using the Bootstrap framework. Implemented an online marketplace
-            that allowed users to design a custom phone case and managed payments through the Amazon Payments API.<br><br>
-            <a href = "https://www.behance.net/gallery/22329793/The" target="_blank">View the design</a>
-      		</div> <!-- cd-timeline-content -->
-      	</div> <!-- cd-timeline-block -->
-
 
         <!-- SHLEPPIT -->
 
@@ -420,8 +449,8 @@
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->
 
-          <div class = "cd-timeline-content direction1">
-            <div class = "timeline-header">Shleppit Mobile Proposal <br> (May 2014 - July 2014)</div>
+          <div class = "cd-timeline-content direction2">
+            <div class = "timeline-header">Shleppit Mobile Proposal<br> (May 2014 - July 2014)</div>
             A European startup, Shleppit, contacted Fractal Tech in order to request my design
             insight for a mobile application they were considering. I designed a mobile UI
             and host the design now on Behance as free inspiration for other graphic designers.<br><br>
@@ -434,7 +463,7 @@
 
       <span id = "projects" style = "display: None;">
 
-        <!-- MAL FILTER -->
+        <!-- CINEMATCHA -->
 
         <div class = "cd-timeline-block animated fade">
           <div class = "cd-timeline-img cd-picture">
@@ -442,11 +471,12 @@
           </div> <!-- cd-timeline-img -->
 
           <div class = "cd-timeline-content direction1">
-            <div class = "timeline-header">MAL Filter<br> (December 2016 - April 2016)</div>
-            Project to develop a content filtering Chrome extension for the popular reference website, MyAnimeList.
-            Users can block all specified reference entry patterns from appearing in their feed. Other small tweaks
-            to make filtering less noticeable and seamless are togglable.<br><br>
-            <a href = "https://github.com/westaboo/MyAnimeList-Filter" target="_blank">View the code</a>
+            <div class = "timeline-header">Cinematcha<br> (January 2018 - March 2018)</div>
+            Built a movie recommendation engine on top of TheMovieDB, as a research project in
+            search systems. Focussed primarily on researching algorithmic models for dynamic
+            recommendation engines. Project was written and hosted on a LAMP stack, using
+            PHP for general server-side hosting and Python for query indexing.<br><br>
+            <a href = "https://github.com/facillity/cinematcha" target="_blank">View the code</a>
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -459,11 +489,28 @@
 
           <div class = "cd-timeline-content direction2">
             <div class = "timeline-header">Roboto or Notto<br> (March 2017)</div>
-            Project with a group of three other students at Caltech. The end goal was to create a
-            game where users are pitted against either a bot or another human and must decide if their opponent
-            is a bot or not by the end of a 30 second round. We created a self-learning chatbot using
-            Wolfram's Mathematica and developed the chat interface using ReactJS.<br><br>
+            Developed a game where players are pitted against either a bot or another human,
+            and must decide if their opponent is a bot or not by the end of a 30 second round.
+            Wrote a script to generate chatbots from a pool of conversations mined from the internet.
+            Used English structural language analysis to select appropriate responses from a Markov
+            Chain of possibilities.<br><br>
             <a href = "https://github.com/westaboo/MathematicaChatbot" target="_blank">View the code</a>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <!-- MAL FILTER -->
+
+        <div class = "cd-timeline-block animated fade">
+          <div class = "cd-timeline-img cd-picture">
+            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
+          </div> <!-- cd-timeline-img -->
+
+          <div class = "cd-timeline-content direction1">
+            <div class = "timeline-header">MAL Filter<br> (December 2016 - March 2016)</div>
+            Project to develop a content filtering Chrome extension for the popular reference website, MyAnimeList.
+            Users can block all specified reference entry patterns from appearing in their feed. Other small tweaks
+            to make filtering less noticeable and seamless are togglable.<br><br>
+            <a href = "https://github.com/westaboo/MyAnimeList-Filter" target="_blank">View the code</a>
           </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -474,7 +521,7 @@
             <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
           </div> <!-- cd-timeline-img -->
 
-          <div class = "cd-timeline-content direction1">
+          <div class = "cd-timeline-content direction2">
             <div class = "timeline-header">Backpack Mobile Application <br> (June 2013 - January 2015)</div>
             Personal project with a group of friends to create a mobile planner and study aid for
             high school students. I worked alone on the design of the application, and the programming
@@ -494,7 +541,6 @@
       <div id = "p-text" class = "code-color">
         Like what I do?<br>
         Consider commissioning me to build your website.<br>
-
         Email me at <a href = "mailto:zhanif@uci.edu">zhanif@uci.edu</a> for questions.
       </div><br>
 
@@ -508,5 +554,10 @@
   </div>
 
 </body>
+
+<!-- Ah now that's aestheticism -->
+<link rel="stylesheet" type = "text/css" href="./includes/vertical-timeline/css/style.css">
+<link rel="stylesheet" type = "text/css" href="./main.css">
+<link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <script src = "app.js"></script>
