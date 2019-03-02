@@ -3,10 +3,6 @@
 
 // Generate background
 
-intro.style.height = window.innerHeight.toString() + 'px';
-var introName = document.getElementById('intro-name');
-introName.style.marginTop = (intro.clientHeight * .18).toString() + 'px';
-
 generateClouds(2);
 
 function hideProjects() {

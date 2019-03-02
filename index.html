@@ -30,13 +30,11 @@
 
   <style>
     html, div.container {
-      background: ghostWhite;
       font-family: sans-serif;
     }
 
     body {
       margin: 0 0 0 0;
-      background-color: white;
     }
 
     h1 {
@@ -93,7 +91,7 @@
     #intro {
       height: 100vh;
       background-image: url('intro-bottom.png');
-      background-size: contain;
+      background-size: auto 100%;
       background-repeat: repeat-x;
       color: white;
     }
@@ -115,10 +113,6 @@
       transition: .3s all;
     }
 
-    #intro-name {
-      margin-top: 9%;
-    }
-
     .intro-title-typed {
       margin: auto 0 50px;
       display: inline-block;
@@ -134,6 +128,13 @@
     .zoomInUp {
       -webkit-animation-name: zoomInUp;
       animation-name: zoomInUp;
+    }
+
+    #bouncesDown {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
     }
 
     @media only screen and (min-width: 75em) {
@@ -304,59 +305,62 @@
 
     <div id = "clouds" style = "width: 100%; height: auto; position: absolute; z-index: 0; margin-top: 0px"></div>
 
-    <div id = "boucesDown" class = "animated bounceInDown">
-      <div id = "intro-name" class = "col-xs-12">
-        <h1>Zeeshan Hanif</h1>
+    <div id = "bouncesDown">
+      <div class = "animated bounceInDown">
+
+        <div id = "intro-name" class = "col-xs-12">
+          <h1>Zeeshan Hanif</h1>
+        </div>
+
+        <div class = "col-xs-12" style = "z-index: 2;">
+          <h2 class = "intro-title-typed"> &nbsp;Developer and Designer</h2>
+          <h2 class = "intro-title-typed blink cursor">|</h2>
+        </div>
+
+        <a href = "./resume.pdf" target="_blank">
+          <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-2 text-center intro-link-container">
+            <div class = "intro-link">
+              <i class = "fas fa-file-alt"></i><br>Resume
+            </div>
+          </div>
+        </a>
+
+        <a href = "#timeline">
+          <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
+            <div class = "intro-link">
+              <i class = "fas fa-sitemap"></i><br>Projects
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.linkedin.com/in/westaboo">
+          <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-0 text-center intro-link-container">
+            <div class = "intro-link">
+              <i class="fab fa-linkedin-in"></i><br>LinkedIn
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://github.com/westaboo">
+          <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
+            <div class = "intro-link">
+              <i class = "fab fa-github"></i><br>GitHub
+            </div>
+          </div>
+        </a>
+
       </div>
-
-      <div class = "col-xs-12" style = "z-index: 2;">
-        <h2 class = "intro-title-typed"> &nbsp;Developer and Designer</h2>
-        <h2 class = "intro-title-typed blink cursor">|</h2>
-      </div>
-
-      <a href = "./resume.pdf" target="_blank">
-        <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-2 text-center intro-link-container">
-          <div class = "intro-link">
-            <i class = "fas fa-file-alt"></i><br>Resume
-          </div>
-        </div>
-      </a>
-
-      <a href = "#timeline">
-        <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
-          <div class = "intro-link">
-            <i class = "fas fa-sitemap"></i><br>Projects
-          </div>
-        </div>
-      </a>
-
-      <a href = "https://www.linkedin.com/in/westaboo">
-        <div class = "col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-0 text-center intro-link-container">
-          <div class = "intro-link">
-            <i class="fab fa-linkedin-in"></i><br>LinkedIn
-          </div>
-        </div>
-      </a>
-
-      <a href = "https://github.com/westaboo">
-        <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
-          <div class = "intro-link">
-            <i class = "fab fa-github"></i><br>GitHub
-          </div>
-        </div>
-      </a>
 
     </div> <!-- end link row -->
-
   </div> <!-- end intro -->
 
   <!-- IMAGE OF VIM -->
 
-  <div id = "intro-code" class = "container" >
+  <!-- <div id = "intro-code" class = "container" >
     <div id = "code" class = "col-xs-10 col-xs-offset-1 animated zoomInUp">
       <img src = "code.png" alt = "C++ code" class = "img-responsive code-img" />
     </div>
-  </div>
+  </div> -->
 
   <!-- TEXT AFTER CODE -->
 
