@@ -29,6 +29,7 @@ h1, h2 {
   padding: 10px 15px;
   border-radius: 3px;
   transition: .2s background;
+  text-align: center;
 }
 
 .cd-timeline-content a:hover {
@@ -68,7 +69,7 @@ h1, h2 {
 
 #contact-info a {
   color: #00b1a2;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 #intro-code {
@@ -184,6 +185,27 @@ h1, h2 {
 
 #timeline {
   background: url('timeline-background.gif');
+}
+
+.timeline-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.timeline-header-dates {
+  font-size: 15px;
+  margin: -4px 0 0 0;
+}
+
+.timeline-gap {
+  width: 100%;
+  height: 8px;
+}
+
+.timeline-link {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .timeline-navbar {
