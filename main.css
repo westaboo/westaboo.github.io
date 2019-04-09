@@ -190,11 +190,11 @@ h1, h2 {
 .timeline-header {
   text-align: center;
   font-weight: bold;
+  line-height: 22px !important;
 }
 
 .timeline-header-dates {
   font-size: 15px;
-  margin: -4px 0 0 0;
 }
 
 .timeline-gap {
