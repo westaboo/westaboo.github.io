@@ -86,7 +86,7 @@
 
     #intro {
       height: 100vh;
-      background-image: url('intro-bottom.png');
+      background-image: url('./images/intro-bottom.png');
       background-size: auto 100%;
       background-repeat: repeat-x;
       color: white;
@@ -303,7 +303,7 @@
         </div>
 
         <div class = "col-xs-12" style = "z-index: 2;">
-          <h2 class = "intro-title-typed">Noogler</h2>
+          <h2 class = "intro-title-typed">Developer and Designer</h2>
           <h2 class = "intro-title-typed blink cursor">|</h2>
         </div>
 
@@ -344,14 +344,6 @@
     </div> <!-- end link row -->
   </div> <!-- end intro -->
 
-  <!-- IMAGE OF VIM -->
-
-  <!-- <div id = "intro-code" class = "container" >
-    <div id = "code" class = "col-xs-10 col-xs-offset-1 animated zoomInUp">
-      <img src = "code.png" alt = "C++ code" class = "img-responsive code-img" />
-    </div>
-  </div> -->
-
   <!-- TEXT AFTER CODE -->
 
   <div class = "statement-container animated fade col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
@@ -373,287 +365,11 @@
   <!-- TIMELINE -->
 
   <div id = "timeline">
-
-    <ul class = "timeline-navbar text-center">
-      <a href = "#intro"><li>&#x25B2; Top</li></a>
-      <span style = "color: white; font-size: 16px;">|</span>
-      <a id = "filter-work" style = "font-weight: bold;" onclick = "hideProjects()"><li>Work</li></a>
-      <span style = "color: white; font-size: 16px;">|</span>
-      <a id = "filter-projects" onclick = "hideWork()"><li>Projects</li></a>
-      <span style = "color: white; font-size: 16px;">|</span>
-      <a href = "#end"><li>&#x25BC; Skip</li></a>
-    </ul>
-
-    <div id = "cd-timeline">
-
-      <span id = "work">
-
-        <!-- GOOGLE -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Google<br>
-              <div class = "timeline-header-dates">(July 2019 - present)</div>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- ALCATEL-LUCENT ENTERPRISE 2 -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Alcatel­-Lucent Enterprise<br>
-              <div class = "timeline-header-dates">(October 2017 - June 2018)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Tasked to refresh the web interface of our network switches, using
-            Angular to create a RESTful system.
-            <br>
-            • Took part in initial schema plans, alongside other engineers from
-            Southern California and France, where workload was assessed and a
-            requirements document was produced.
-            <br>
-            • Reworked the VLAN portion of the web interface, with a focus on
-            modular code and code reusability.
-
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- ALCATEL-LUCENT ENTERPRISE 1 -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Alcatel­-Lucent Enterprise<br>
-              <div class = "timeline-header-dates">(July 2017 - October 2017)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Developed a ticketing platform focused on logging employee
-            behaviors and project progress.
-            <br>
-            • Created a PHP backend and a JavaScript frontend, focusing on a
-            responsive, asynchronous solution, which allowed multiple employees
-            to directly interact with a single ticket.
-            <br>
-            • Implemented a dashboard overview of tickets, import and export of
-            tickets to Excel, and a notification system.
-            <br>
-            • Allowed the company to function more efficiently when dealing with
-            bug reports and resource allocation.
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- DAOMI -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Daomi Design<br>
-              <div class = "timeline-header-dates">(November 2016 - May 2017)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Managed both backend and frontend applications by designing and
-            implementing schemas in MySQL and React.
-            <br>
-            • Drafted requirements documentation, arranged meetings with
-            clientele, and discussed product progression.
-            <br>
-            • Created responsive web applications, with a focus on passing all
-            Google PageSpeed tests for mobile readiness and optimization.
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- SHLEPPIT -->
-
-        <div class="cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content" style = "text-align: center">
-
-            <div class = "timeline-header">
-              Shleppit Mobile Proposal<br>
-              <div class = "timeline-header-dates">(May 2014 - July 2014)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            Designed a mobile UI for Shleppit Inc.
-            <br><br>
-
-            <div class = "timeline-link">
-              <a href = "https://www.behance.net/gallery/18588115/Shleppit" target="_blank">View the design</a>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-      </span>
-
-
-      <span id = "projects" style = "display: None;">
-
-        <!-- CINEMATCHA -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Cinematcha<br>
-              <div class = "timeline-header-dates">(January 2018 - March 2018)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Built a movie recommendation engine on top of TheMovieDB, as a
-            research project in search systems.
-            <br>
-            • Researched algorithmic models for dynamic recommendation engines.
-            <br>
-            • Increased ranking of a recommendation based on a variety of
-            weighted factors (e.g. watch history, favorite genre, favorite
-            films of users with similar tastes, the weather, the time of day,
-            etc.).
-            <br>
-            • Lowered the ranking of some films for users in certain geographic
-            locations based on synopses and crises data.
-            <br><br>
-
-            <div class = "timeline-link">
-              <a href = "https://github.com/facillity/cinematcha" target="_blank">View the code</a>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- ROBOTO OR NOTTO -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Roboto or Notto<br>
-              <div class = "timeline-header-dates">(March 2017)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Created a game in which the user must decide if their opponent is
-            a chatbot or not by the end of a 30 second round.
-            <br>
-            • Wrote a script to generate chatbots from a pool of conversations
-            mined from online forums.
-            <br>
-            • Used English structural language analysis to select appropriate
-            responses from a Markov Chain of possibilities.
-            <br><br>
-
-            <div class = "timeline-link">
-              <a href = "https://github.com/westaboo/MathematicaChatbot" target="_blank">View the code</a>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- MAL FILTER -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              MAL Filter<br>
-              <div class = "timeline-header-dates">(December 2016 - March 2016)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Developed a content filtering Chrome extension for the popular
-            reference database, MyAnimeList.
-            <br>
-            • Created a frontend interface, where users can specify patterns
-            to block from their feed.
-            <br>
-            • Implemented other tweaks and toggles to make filtering less
-            intrusive.
-            <br><br>
-
-            <div class = "timeline-link">
-              <a href = "https://github.com/westaboo/MyAnimeList-Filter" target="_blank">View the code</a>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <!-- BACKPACK -->
-
-        <div class = "cd-timeline-block animated fade">
-          <div class = "cd-timeline-img cd-picture">
-            <img src = "includes/vertical-timeline/img/cd-icon-location.svg" alt = "Work Experience">
-          </div> <!-- cd-timeline-img -->
-
-          <div class = "cd-timeline-content direction">
-
-            <div class = "timeline-header">
-              Backpack Mobile Application<br>
-              <div class = "timeline-header-dates">(June 2013 - January 2015)</div>
-            </div>
-
-            <div class = "timeline-gap"></div>
-            • Personal project to create a mobile planner and study aid for
-            high school students.
-            <br>
-            • Designed the UI and workflows of the application.
-            <br><br>
-
-            <div class = "timeline-link">
-              <a href = "https://www.behance.net/gallery/18588671/Backpack" target="_blank">View the design</a>
-            </div>
-
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-      </span>
-
-    </div>
+    <ul id = "timeline-links" class = "timeline-navbar text-center"></ul>
+    <div id = "cd-timeline"></div>
   </div>
+
+  <!-- FOOTER -->
 
   <section id = "end">
 
@@ -662,11 +378,7 @@
         Like what I do?<br>
         Consider commissioning me to build your website.<br>
         Contact me at <a href = "mailto:zshanif@gmail.com">zshanif@gmail.com</a>.
-      </div><br>
-
-      <a href = "https://www.behance.net/zshanif" target="_blank"><div id = "p-text" class = "social-media behance">Be</div></a>
-      <a href = "https://plus.google.com/105394455046958357244" target="_blank"><div id = "p-text" class = "social-media daomi">G+</div></a>
-      <a href = "https://www.linkedin.com/in/westaboo/" target="_blank"><div id = "p-text" class = "social-media linkedin">in</div></a>
+      </div>
     </div>
 
   </section>
@@ -675,9 +387,12 @@
 
 </body>
 
-<!-- Ah now that's aestheticism -->
+<!-- Ah, now that's aesthetic -->
 <link rel="stylesheet" type = "text/css" href="./includes/vertical-timeline/css/style.css">
 <link rel="stylesheet" type = "text/css" href="./main.css">
 <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-<script src = "app.js"></script>
+<script src = "./scripts/timeline_work.json" charset = "UTF-8"></script>
+<script src = "./scripts/timeline_projects.json" charset = "UTF-8"></script>
+<script src = "./scripts/timeline.js" charset = "UTF-8"></script>
+<script src = "./scripts/clouds.js"></script>

@@ -184,7 +184,7 @@ h1, h2 {
 }
 
 #timeline {
-  background: url('timeline-background.gif');
+  background: url('./images/timeline-background.gif');
 }
 
 .timeline-header {
