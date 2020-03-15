@@ -2,7 +2,6 @@ _timeline_projects = {
   "id": "projects",
   "title": "Projects",
   "format": "timeline",
-  "description": "Zeeshan Hanif's projects.",
   "items": [
     {
       "title": "Cinematcha",

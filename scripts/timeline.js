@@ -3,7 +3,7 @@
 // Timeline toggles
 
 function toggleTimeline(timeline, show_id) {
-  let filter_id = "filter-" + timeline.id;
+  let filter_id = "timeline-filter-" + timeline.id;
   if (timeline.id === show_id) {
     timeline.style.display = "";
     document.getElementById(filter_id).style.fontWeight = "bold";
@@ -34,15 +34,18 @@ function _createTimeLineLink(timeline) {
     throw "Timeline title cannot be null."
   }
 
-  return "<a id = 'filter-" + timeline.id +
+  return "<a id = 'timeline-filter-" + timeline.id +
     "' onclick = 'showTimeline(`" + timeline.id + "`)'><li>" + timeline.title + "</li></a>";
 }
 
 function _createTimeLineLinks(timelines) {
   let timeline_links = document.getElementById("timeline-links");
   let separator = "<span style = 'color: white; font-size: 16px;'>|</span>";
+  // This "x + separator + y.join(separator) + separator + z" makes me feel
+  // disgusting, but I think this is generally more efficient than
+  // "x.concat(y.concat(z)).join(separator)".
   timeline_links.innerHTML = "<a href = '#intro'><li>▲ Top</li></a>" +
-    timelines.map(_createTimeLineLink).join(separator) +
+    separator + timelines.map(_createTimeLineLink).join(separator) + separator +
     "<a href = '#end'><li>▼ Skip</li></a>";
 }
 
@@ -153,5 +156,6 @@ function _createTimeLines(timelines) {
 function _generateTimeLines(timelines) {
   _createTimeLineLinks(timelines);
   _createTimeLines(timelines);
-  showTimeline("work");
+  // Only show the first timeline by default.
+  showTimeline(timelines[0].id);
 }

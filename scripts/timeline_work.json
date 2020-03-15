@@ -2,7 +2,6 @@ _timeline_work = {
   "id": "work",
   "title": "Work",
   "format": "timeline",
-  "description": "Zeeshan Hanif's work history.",
   "items": [
     {
       "title": "Google",
