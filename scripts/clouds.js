@@ -1,4 +1,4 @@
-// Y'all about to witness the strength of street knowledge
+// You are now about to witness the strength of street knowledge
 
 // Generate background
 
