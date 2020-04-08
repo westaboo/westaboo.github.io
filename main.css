@@ -197,6 +197,12 @@ h1, h2 {
 }
 
 @media only screen and (max-width: 75em) {
+  #cd-timeline::before, .cd-timeline-img.cd-picture {
+    display: none;
+  }
+  .cd-timeline-content {
+    margin: 0 !important;
+  }
   .cd-timeline-content .cd-read-more {
     float: right;
   }
