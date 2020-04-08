@@ -5,7 +5,7 @@ _timeline_work = {
   "items": [
     {
       "title": "Google",
-      "dates": "July 2019 - present",
+      "dates": "Jul 2019",
       "description": [
         "Developing world class APIs on a simple, efficient stack.",
         "Keeping the Google Cloud Storage (GCS) JSON API up and running; my work involving performance, system, and load testing ensures that our systems can quickly, correctly, and reliably handle the millions of QPS our customers send us everyday."
@@ -13,7 +13,7 @@ _timeline_work = {
     },
     {
       "title": "Alcatel­-Lucent Enterprise",
-      "dates": "October 2017 - June 2018",
+      "dates": "Oct 2017 - Jun 2018",
       "description": [
         "My internship was extended, and I began working remotely as a part-time engineer while attending school. The majority of my time was spent continuing work on my intern project. Aside from this, I had another project, briefly described below.",
         "Worked on refreshing the decade-old web interface of our network switches. This required me to work with engineers from Southern California and France to produce a requirements document.",
@@ -22,7 +22,7 @@ _timeline_work = {
     },
     {
       "title": "Alcatel­-Lucent Enterprise",
-      "dates": "July 2017 - October 2017",
+      "dates": "Jul 2017 - Oct 2017",
       "description": [
         "Developed a ticketing platform focused on logging project progress. The goal of the platform was to allow multiple employees to function more efficiently when dealing with bugs.",
         "Worked with a legacy PHP backend and a JavaScript frontend, focused on providing employees with a responsive application to manage their tickets.",
@@ -32,7 +32,7 @@ _timeline_work = {
     },
     {
       "title": "Daomi Design",
-      "dates": "",
+      "dates": "Nov 2016 - May 2017",
       "description": [
         "Worked with a student organization that developed free portfolios for students.",
         "Managed both backend and frontend applications using React, Node.js, and MySQL.",

@@ -55,7 +55,14 @@ function _createTimeLineLinks(timelines) {
 function _createItemImage() {
   return `<div class = 'cd-timeline-img cd-picture'>
     <img src = 'includes/vertical-timeline/img/cd-icon-location.svg'>
-  </div>`
+  </div>`;
+}
+
+/*
+  Static gap used by all timeline items.
+*/
+function _createGap() {
+  return "<div class = 'timeline-gap'></div>";
 }
 
 /*
@@ -67,13 +74,11 @@ function _serializeItemDescription(description) {
   if (typeof description === "string") {
     return description;
   }
-  return "• " + description.join("\n<br>\n• ");
+  return _createGap() + "• " + description.join(_createGap() + "• ")
+    + _createGap();
 }
 
-/*
-  Adds padding to description field.
-*/
-function _padItemDescription(description) {
+function _createItemDescription(description) {
   if (typeof description === "object") {
     description = _serializeItemDescription(description);
   }
@@ -81,16 +86,7 @@ function _padItemDescription(description) {
     throw "description must be type 'string' or an array of strings.";
   }
 
-  return "<div class = 'timeline-gap'></div>" + description + "<br>";
-}
-
-function _createItemDescription(description) {
-  try {
-    return _padItemDescription(description);
-  } catch {
-    // no-op
-  }
-  return "";
+  return description;
 }
 
 function _createItemLink(link) {
@@ -98,8 +94,8 @@ function _createItemLink(link) {
     return "";
   }
 
-  return "<br><div class = 'timeline-link'><a href = '" + link.url +
-    "' target='_blank'>" + link.text + "</a></div>";
+  return "<div class = 'timeline-link'><a href = '" + link.url +
+    "' target='_blank'>" + link.text + "</a></div>" + _createGap();
 }
 
 function _createItemHeader(title, dates) {
@@ -109,18 +105,24 @@ function _createItemHeader(title, dates) {
 
   let embedded_date = "";
   if (typeof dates === "string" && dates.length > 0) {
-    embedded_date = "<div class = 'timeline-header-dates'>(" + dates + ")</div>"
+    embedded_date = "<div class = 'timeline-header-dates'>" + dates +
+      "</div>"
   }
 
-  return "<div class = 'timeline-header'>" + title + "<br>" +
-    embedded_date + "</div>";
+  return "<div class = 'timeline-header'><div class = 'timeline-header-title'>"
+    + title + "</div>" + embedded_date + "</div>";
 }
 
 function _createItemContent(item) {
   return [
     "<div class = 'cd-timeline-content direction'>",
+    _createGap(),
     _createItemHeader(item.title, item.dates),
+    _createGap(),
+    "<div class = 'timeline-description'>",
     _createItemDescription(item.description),
+    "</div>",
+    _createGap(),
     _createItemLink(item.link),
     "</div>"
   ].join("");
