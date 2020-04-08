@@ -94,8 +94,8 @@ function _createItemLink(link) {
     return "";
   }
 
-  return "<div class = 'timeline-link'><a href = '" + link.url +
-    "' target='_blank'>" + link.text + "</a></div>" + _createGap();
+  return "<a class = 'timeline-link' href = '" + link.url +
+    "' target='_blank'>" + link.text + "</a>" + _createGap();
 }
 
 function _createItemHeader(title, dates) {

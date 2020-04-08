@@ -148,27 +148,24 @@ h1, h2 {
 }
 
 .timeline-link {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
   width: inherit;
   max-width: 200px;
+  display: inherit;
   margin: auto;
+  transition: .2s background;
   padding: 22px 0;
   background-color: #48739d;
   border-radius: 5em;
 }
 
-.timeline-link a {
+.timeline-link:hover {
   color: white;
-  padding: inherit;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 5em;
-  text-transform: uppercase;
-  transition: .2s background;
-  text-align: center;
-}
-
-.timeline-link a:hover {
+  text-decoration: none;
   background-color: #5080af;
 }
 
