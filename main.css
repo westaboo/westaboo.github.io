@@ -163,7 +163,7 @@ h1, h2 {
   border-radius: 5em;
 }
 
-.timeline-link:hover {
+.timeline-link:hover, .timeline-link:active, .timeline-link:focus {
   color: white;
   text-decoration: none;
   background-color: #5080af;
