@@ -149,11 +149,15 @@ h1, h2 {
 
 .timeline-link {
   text-align: center;
-  padding: 22px 30px;
+  width: inherit;
+  max-width: 200px;
+  margin: auto;
+  padding: 22px 0;
+  background-color: #48739d;
+  border-radius: 5em;
 }
 
 .timeline-link a {
-  background-color: #48739d;
   color: white;
   padding: inherit;
   font-size: 14px;
