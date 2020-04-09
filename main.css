@@ -107,7 +107,7 @@ h1, h2 {
   text-transform: uppercase;
   border-radius: 5em;
   cursor: pointer;
-  transition: .3s all linear;
+  transition: .2s all linear;
   color: white;
 }
 
@@ -173,7 +173,7 @@ h1, h2 {
 .timeline-link:hover, .timeline-link:active, .timeline-link:focus {
   color: white;
   text-decoration: none;
-  background-color: #5080af;
+  background-color: #3e6994;
 }
 
 .timeline-navbar {
