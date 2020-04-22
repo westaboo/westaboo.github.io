@@ -6,7 +6,7 @@ _timeline_art = {
     {
       "title": "Europe",
       "dates": "June 2019",
-      "description": "A collection of pieces I created to commemorate my travels in Europe, inspired by the Islamic influence I encountered.",
+      "description": "A collection of pieces I created to commemorate my travels in Europe.",
       "link": {
         "text": "View Gallery",
         "onclick": "alert('coming soon');"
