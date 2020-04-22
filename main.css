@@ -4,6 +4,7 @@ html {
 
 body {
   line-height: 1.5;
+  background: unset;
 }
 
 a:hover, a:focus {
@@ -168,6 +169,7 @@ h1, h2 {
   padding: 22px 0;
   background-color: #48739d;
   border-radius: 5em;
+  cursor: pointer;
 }
 
 .timeline-link:hover, .timeline-link:active, .timeline-link:focus {

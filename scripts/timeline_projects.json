@@ -5,7 +5,7 @@ _timeline_projects = {
   "items": [
     {
       "title": "Cinematcha",
-      "dates": "Jan 2018 - Mar 2018",
+      "dates": "January 2018 - March 2018",
       "description": [
         "Built a movie recommendation engine on top of TheMovieDB, as a research project in search systems.",
         "Researched algorithmic models for dynamic recommendation engines.",
@@ -19,7 +19,7 @@ _timeline_projects = {
     },
     {
       "title": "Roboto or Notto",
-      "dates": "Mar 2017",
+      "dates": "March 2017",
       "description": [
         "Created a game in which the user must decide if their opponent is a chatbot or not by the end of a 30 second round.",
         "Wrote a script to generate chatbots from a pool of conversations mined from online forums.",
@@ -32,7 +32,7 @@ _timeline_projects = {
     },
     {
       "title": "MAL Filter",
-      "dates": "Dec 2016 - Mar 2016",
+      "dates": "December 2016 - March 2016",
       "description": [
         "Developed a content filtering Chrome extension for the popular reference database, MyAnimeList.",
         "Created a frontend interface, where users can specify patterns to block from their feed.",

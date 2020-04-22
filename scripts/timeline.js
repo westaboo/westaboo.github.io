@@ -21,10 +21,44 @@ function showTimeline(show_id) {
   timelines.map(function(timeline) {
     toggleTimeline(timeline, show_id);
   });
+  setCookie("last_timeline", show_id);
+}
+
+// Timeline cookies
+
+function _getCookies() {
+  return document.cookie.split(";");
+}
+
+function _getCookieValueFromPair(cookie_kv_pair, key) {
+  if (typeof cookie_kv_pair != "string") {
+    throw "cookie must be type 'string'.";
+  }
+
+  kv = cookie_kv_pair.split("=");
+  if (kv.length != 2 || kv[0] !== key) {
+    return "";
+  }
+
+  return kv[1];
+}
+
+function getCookie(cookie) {
+  if (typeof cookie != "string") {
+    throw "cookie must be type 'string'.";
+  }
+
+  return _getCookies().map(function(cookie_kv_pair) {
+    return _getCookieValueFromPair(cookie_kv_pair, cookie);
+  }).join("");
+}
+
+function setCookie(cookie, value) {
+  document.cookie = [cookie, value].join("=");
 }
 
 // Generate timeline
-_generateTimeLines([_timeline_work, _timeline_projects]);
+_generateTimeLines([_timeline_work, _timeline_projects, _timeline_art]);
 
 function _createTimeLineLink(timeline) {
   if (timeline.id == null) {
@@ -44,9 +78,7 @@ function _createTimeLineLinks(timelines) {
   // This "x + separator + y.join(separator) + separator + z" makes me feel
   // disgusting, but I think this is generally more efficient than
   // "x.concat(y.concat(z)).join(separator)".
-  timeline_links.innerHTML = "<a href = '#intro'><li>▲ Top</li></a>" +
-    separator + timelines.map(_createTimeLineLink).join(separator) + separator +
-    "<a href = '#end'><li>▼ Skip</li></a>";
+  timeline_links.innerHTML = timelines.map(_createTimeLineLink).join(separator);
 }
 
 /*
@@ -71,31 +103,45 @@ function _createGap() {
   with bullet points.
 */
 function _serializeItemDescription(description) {
+  let itemized_description = document.createElement("div");
+  itemized_description.setAttribute("class", "timeline-description");
+
   if (typeof description === "string") {
-    return description;
+    itemized_description.innerText = description;
+    itemized_description.style.textAlign = "center";
+  } else {
+    itemized_description.innerHTML = "• " +
+      description.join(_createGap() + "• ");
   }
-  return _createGap() + "• " + description.join(_createGap() + "• ")
-    + _createGap();
+  return itemized_description.outerHTML + _createGap();
 }
 
 function _createItemDescription(description) {
-  if (typeof description === "object") {
-    description = _serializeItemDescription(description);
-  }
-  if (typeof description != "string") {
+  if (typeof description !== "object" && typeof description != "string") {
     throw "description must be type 'string' or an array of strings.";
   }
 
-  return description;
+  return _serializeItemDescription(description);
 }
 
 function _createItemLink(link) {
-  if (link == null || link.url == null || link.text == null) {
+  if (link == null || link.text == null) {
     return "";
   }
 
-  return "<a class = 'timeline-link' href = '" + link.url +
-    "' target='_blank'>" + link.text + "</a>" + _createGap();
+  let button = document.createElement("a");
+  button.innerText = link.text;
+  button.setAttribute("class", "timeline-link");
+
+  if (link.url != null) {
+    button.setAttribute("href", link.url);
+    button.setAttribute("target", "_blank");
+  }
+  if (link.onclick != null) {
+    button.setAttribute("onclick", link.onclick);
+  }
+
+  return button.outerHTML + _createGap();
 }
 
 function _createItemHeader(title, dates) {
@@ -114,18 +160,16 @@ function _createItemHeader(title, dates) {
 }
 
 function _createItemContent(item) {
-  return [
-    "<div class = 'cd-timeline-content direction'>",
-    _createGap(),
+  let item_content = document.createElement("div");
+  item_content.setAttribute("class", "cd-timeline-content direction");
+
+  item_content.innerHTML = _createGap() + [
     _createItemHeader(item.title, item.dates),
-    _createGap(),
-    "<div class = 'timeline-description'>",
     _createItemDescription(item.description),
-    "</div>",
-    _createGap(),
     _createItemLink(item.link),
-    "</div>"
-  ].join("");
+  ].join(_createGap());
+
+  return item_content.outerHTML;
 }
 
 function _createTimeLineItem(item) {
@@ -158,6 +202,12 @@ function _createTimeLines(timelines) {
 function _generateTimeLines(timelines) {
   _createTimeLineLinks(timelines);
   _createTimeLines(timelines);
-  // Only show the first timeline by default.
-  showTimeline(timelines[0].id);
+
+  let last_timeline = getCookie("last_timeline");
+  if (last_timeline != "") {
+    showTimeline(last_timeline);
+  } else {
+    // Only show the first timeline by default in not viewing another.
+    showTimeline(timelines[0].id);
+  }
 }
