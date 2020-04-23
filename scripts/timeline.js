@@ -21,44 +21,10 @@ function showTimeline(show_id) {
   timelines.map(function(timeline) {
     toggleTimeline(timeline, show_id);
   });
-  setCookie("last_timeline", show_id);
-}
-
-// Timeline cookies
-
-function _getCookies() {
-  return document.cookie.split(";");
-}
-
-function _getCookieValueFromPair(cookie_kv_pair, key) {
-  if (typeof cookie_kv_pair != "string") {
-    throw "cookie must be type 'string'.";
-  }
-
-  kv = cookie_kv_pair.split("=");
-  if (kv.length != 2 || kv[0] !== key) {
-    return "";
-  }
-
-  return kv[1];
-}
-
-function getCookie(cookie) {
-  if (typeof cookie != "string") {
-    throw "cookie must be type 'string'.";
-  }
-
-  return _getCookies().map(function(cookie_kv_pair) {
-    return _getCookieValueFromPair(cookie_kv_pair, cookie);
-  }).join("");
-}
-
-function setCookie(cookie, value) {
-  document.cookie = [cookie, value].join("=");
 }
 
 // Generate timeline
-_generateTimeLines([_timeline_work, _timeline_projects, _timeline_art]);
+_generateTimeLines([_timeline_projects, _timeline_work, _timeline_art]);
 
 function _createTimeLineLink(timeline) {
   if (timeline.id == null) {
@@ -203,11 +169,6 @@ function _generateTimeLines(timelines) {
   _createTimeLineLinks(timelines);
   _createTimeLines(timelines);
 
-  let last_timeline = getCookie("last_timeline");
-  if (last_timeline != "") {
-    showTimeline(last_timeline);
-  } else {
-    // Only show the first timeline by default in not viewing another.
-    showTimeline(timelines[0].id);
-  }
+  // Show the middle timeline by default.
+  showTimeline(timelines[(timelines.length >> 1)].id);
 }

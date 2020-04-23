@@ -12,7 +12,7 @@ _timeline_work = {
       ],
       "link": {
         "text": "View resume",
-        "url": "https://westaboo.github.io/resume.pdf"
+        "url": "./resume.pdf"
       }
     },
     {

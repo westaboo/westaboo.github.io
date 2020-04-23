@@ -1,15 +1,15 @@
 _timeline_art = {
-  "id": "art",
+  "id": "artwork",
   "title": "Artwork",
   "format": "timeline",
   "items": [
     {
-      "title": "Europe",
+      "title": "Europe Collection",
       "dates": "June 2019",
-      "description": "A collection of pieces I created to commemorate my travels in Europe.",
+      "description": "A collection of pieces I designed to commemorate my travels in Europe. ",
       "link": {
         "text": "View Gallery",
-        "onclick": "alert('coming soon');"
+        "url": "./gallery/europe/"
       }
     }
   ]

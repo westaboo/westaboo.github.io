@@ -315,7 +315,7 @@
           </div>
         </a>
 
-        <a href = "#timeline">
+        <a href = "#portfolio">
           <div class = "col-xs-5 col-xs-offset-0 col-md-2 col-md-offset-0 text-center intro-link-container">
             <div class = "intro-link">
               <i class = "fas fa-sitemap"></i><br>Portfolio
@@ -346,7 +346,7 @@
 
   <!-- TEXT AFTER CODE -->
 
-  <div class = "statement-container animated fade col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+  <div class = "statement-container animated fade col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3" id = "portfolio">
     <div id = "p-text" class = "statement code-color">
       I am an experienced software developer and hobbyist graphic designer with
       two years of professional experience and over six years of personal experience.
@@ -357,9 +357,9 @@
     <div class = "code-color statement-footer-text col-xs-12" style = "margin-bottom: 20px;">
       I build, test, deploy, and maintain
     </div><br>
-    <div class = "statement-link statement-green col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-3">Responsive Apps</div>
-    <div class = "code-color statement-footer-text col-xs-12 col-md-2">&mdash;&nbsp;&nbsp;&nbsp;using&nbsp;&nbsp;&nbsp;&mdash;</div>
-    <div class = "statement-link statement-purple col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-0">Minimal Design</div>
+    <div class = "statement-link statement-green col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-3" onclick = "showTimeline('projects'); window.location = '#timeline';">Responsive Apps</div>
+    <div class = "code-color statement-footer-text col-xs-12 col-md-2" style = "padding: 17px 0;">&mdash;&nbsp;&nbsp;&nbsp;using&nbsp;&nbsp;&nbsp;&mdash;</div>
+    <div class = "statement-link statement-purple col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-0" onclick = "showTimeline('artwork'); window.location = '#timeline';">Minimal Design</div>
   </div>
 
   <!-- TIMELINE -->
@@ -384,7 +384,6 @@
   </section>
 
   </div>
-
 </body>
 
 <!-- Ah, now that's aesthetic -->
@@ -396,4 +395,5 @@
 <script src = "./scripts/timeline_projects.json" charset = "UTF-8"></script>
 <script src = "./scripts/timeline_art.json" charset = "UTF-8"></script>
 <script src = "./scripts/timeline.js" charset = "UTF-8"></script>
+
 <script src = "./scripts/clouds.js"></script>
