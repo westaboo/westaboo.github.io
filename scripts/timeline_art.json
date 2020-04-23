@@ -4,12 +4,16 @@ _timeline_art = {
   "format": "timeline",
   "items": [
     {
-      "title": "Europe Collection",
+      "title": "Notice",
+      "description": "I've worked very hard on everything that I post here. The samples you'll find below are low resolution versions of my actual work. Please ask for my permission before reposting these elsewhere. This goes without saying, but this was all designed for fun, and I do not intend to monetize anything here.",
+    },
+    {
+      "title": "The Kent Collection",
       "dates": "June 2019",
-      "description": "A collection of pieces I designed to commemorate my travels in Europe. ",
+      "description": "A collection of geometric art pieces I designed to commemorate the experiences I had studying abroad in Europe. The collection is heavily influenced by the geometric and abstract patterns found in Islamic artwork; every piece focuses on a city, specifically the Islamic influence I encountered while in that city.",
       "link": {
         "text": "View Gallery",
-        "url": "./gallery/europe/"
+        "url": "./gallery/kent/"
       }
     }
   ]

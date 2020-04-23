@@ -114,7 +114,7 @@ h1, h2 {
 
 .statement-link-container {
   text-align: center;
-  margin: 0 0 50px 0 !important;
+  margin: 50px 0 !important;
 }
 
 .statement-footer-text {
@@ -190,7 +190,7 @@ h1, h2 {
 .timeline-navbar a li {
   padding: 10px;
   font-size: 16px;
-  width: 120px;
+  width: 105px;
   border-radius: 4px;
   color: white;
   display: inline-block;
@@ -203,7 +203,7 @@ h1, h2 {
 }
 
 @media only screen and (max-width: 75em) {
-  #cd-timeline::before, .cd-timeline-img.cd-picture {
+  #cd-timeline::before, .cd-timeline-img.cd-picture, .statement-container {
     display: none;
   }
   .cd-timeline-content {

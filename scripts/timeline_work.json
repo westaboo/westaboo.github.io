@@ -1,3 +1,8 @@
+_date = new Date();
+_this_month = Intl.DateTimeFormat('en', { month: 'short' }).format(_date);
+_this_year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(_date)
+_current_month = _this_month + " " + _this_year;
+
 _timeline_work = {
   "id": "work",
   "title": "Work",
@@ -5,7 +10,7 @@ _timeline_work = {
   "items": [
     {
       "title": "Google",
-      "dates": "Jul 2019 - Now",
+      "dates": "Jul 2019 - " + _current_month,
       "description": [
         "Developing world class APIs on a simple, efficient stack.",
         "Keeping the Google Cloud Storage (GCS) JSON API up and running; my work involving performance, system, and load testing ensures that our systems can quickly, correctly, and reliably handle the millions of QPS our customers send us everyday."
