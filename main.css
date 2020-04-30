@@ -72,8 +72,6 @@ h1, h2 {
 }
 
 .statement-container {
-  padding: 30px 0 30px 0;
-  margin-top: 20px;
   text-align: center;
   position: relative;
   z-index: 2;
