@@ -15,6 +15,15 @@ _timeline_art = {
         "text": "View Gallery",
         "url": "./gallery/kent/"
       }
+    },
+    {
+      "title": "Ode to 99¢ Arizona",
+      "dates": "May 2017",
+      "description": "This is a meme.",
+      "link": {
+        "text": "View Gif",
+        "url": "./gallery/arizona/"
+      }
     }
   ]
 }
