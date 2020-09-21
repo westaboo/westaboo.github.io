@@ -22,7 +22,7 @@ _timeline_projects = {
       "dates": "March 2017",
       "description": [
         "Created a game in which the user must decide if their opponent is a chatbot or not by the end of a 30 second round.",
-        "Wrote a script to generate chatbots from a pool of conversations mined from online forums.",
+        "Generated chatbots from a pool of conversations mined from online forums.",
         "Used English structural language analysis to select appropriate responses from a Markov Chain of possibilities."
       ],
       "link": {
