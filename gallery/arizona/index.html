@@ -1,7 +1,9 @@
 <html>
 
 <head>
-  <title>Ode to 99&#162; Arizona</title>
+  <title id = "gallery-title">Ode to 99&cent; Arizona</title>
+
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
   <!-- FavIcon for all devices -->
   <link rel = "apple-touch-icon" sizes = "57x57" href = "../../favicons/apple-icon-57x57.png">
@@ -21,81 +23,155 @@
   <meta name = "msapplication-TileColor" content = "#ffffff">
   <meta name = "msapplication-TileImage" content = "/ms-icon-144x144.png">
   <meta name = "theme-color" content = "#ffffff">
+
+  <!-- BOOTSTRAP -->
+  <link rel = "stylesheet" type = "text/css" href = "../../includes/bootstrap/css/bootstrap.min.css">
+
+  <!-- ROBOTO FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500,900&display=swap" rel="stylesheet">
+
+  <style>
+
+    html {
+      background: black;
+      margin: 0;
+    }
+
+    body {
+      text-align: center;
+      background: black;
+    }
+
+    .animated {
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      animation-name: fade;
+    }
+
+    #gallery-container {
+      width: 100%;
+      height: 100%;
+      vertical-align: center;
+    }
+
+    #gallery {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      vertical-align: center;
+      border-collapse: separate;
+      border-spacing: 45px;
+      display: inline-table;
+    }
+
+    .gallery-item {
+      width: 100%;
+      max-width: 33%;
+      display: inline-table;
+      border-spacing: 45px;
+    }
+
+    .gallery-item-piece {
+      width: 100%;
+      padding-top: 120%;
+      border-radius: 50px 50px 0 0;
+      background-size: 150px !important;
+    }
+
+    .gallery-item-tag {
+      width: 100%;
+      background: white;
+      color: black;
+      padding: 25px 0;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 0 0 50px 50px;
+      font-size: 0.75vw;
+      font-weight: 500;
+      letter-spacing: .1rem;
+    }
+
+    .gallery-item-tag p {
+      font-size: 1.25vw;
+      font-weight: 900;
+      letter-spacing: .15rem;
+      margin: 0;
+    }
+
+    @-webkit-keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @media only screen and (max-width: 776px) {
+      .gallery-item {
+        max-width: 100%;
+      }
+
+      #gallery, .gallery-item {
+        border-spacing: 20px;
+      }
+
+      .gallery-item-tag {
+        font-size: 12px;
+      }
+
+      .gallery-item-tag p {
+        font-size: 20px;
+      }
+    }
+
+  </style>
 </head>
 
-<style>
-
-body {
-  background: black;
-  margin: 0;
-}
-
-#container {
-  background: url("arizona.gif");
-  background-size: 250px auto;
-  width: 100vw;
-  height: 100vh;
-  box-shadow: inset 0px 0px 40px 0px rgba(82, 55, 55, 0.5);
-}
-
-p {
-  color: white;
-  font-family: sans-serif;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  animation-name: fade;
-}
-
-.animated {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-</style>
-
 <body>
-  <div id="container" class = "animated fade" draggable="false"></div>
+
+  <div id = "gallery-container">
+    <div id = "gallery">
+
+        <div class = "gallery-item animated fade">
+          <div class = "gallery-item-piece" style = "background: url('arizona.gif')"></div>
+          <div class = "gallery-item-tag">
+            <p>Arizona</p>
+            &#10046;&nbsp;Zeeshan Hanif&nbsp;&#10046;
+          </div>
+        </div>
+
+    </div>
+  </div>
+
 </body>
 
 </html>
