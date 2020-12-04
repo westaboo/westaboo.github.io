@@ -1,0 +1,37 @@
+_gallery = {
+  "id": "galleries",
+  "title": "Galleries",
+  "format": "gallery",
+  "galleryMap": {
+    "kent" : {
+      "title": "The Kent Collection",
+      "items": [
+        {
+          "name": "Barcelona",
+          "src": "../images/gallery-barcelona.png",
+          "color": "#blue"
+        },
+        {
+          "name": "Berlin",
+          "src": "../images/gallery-berlin.png",
+          "color": "#000000"
+        },
+        {
+          "name": "Manchester",
+          "src": "../images/gallery-manchester.png",
+          "color": "red"
+        },
+      ],
+    },
+    "arizona" : {
+      "title": "Ode to 99¢ Arizona",
+      "items": [
+        {
+          "name": "Arizona",
+          "src": "../images/gallery-arizona.gif",
+          "color": "#000000"
+        },
+      ],
+    }
+  }
+}

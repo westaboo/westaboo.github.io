@@ -1,31 +1,31 @@
 <html>
 
 <head>
-  <title id = "gallery-title">Ode to 99&cent; Arizona</title>
+  <title id = "gallery-title"></title>
 
   <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
   <!-- FavIcon for all devices -->
-  <link rel = "apple-touch-icon" sizes = "57x57" href = "../../favicons/apple-icon-57x57.png">
-  <link rel = "apple-touch-icon" sizes = "60x60" href = "../../favicons/apple-icon-60x60.png">
-  <link rel = "apple-touch-icon" sizes = "72x72" href = "../../favicons/apple-icon-72x72.png">
-  <link rel = "apple-touch-icon" sizes = "76x76" href = "../../favicons/apple-icon-76x76.png">
-  <link rel = "apple-touch-icon" sizes = "114x114" href = "../../favicons/apple-icon-114x114.png">
-  <link rel = "apple-touch-icon" sizes = "120x120" href = "../../favicons/apple-icon-120x120.png">
-  <link rel = "apple-touch-icon" sizes = "144x144" href = "../../favicons/apple-icon-144x144.png">
-  <link rel = "apple-touch-icon" sizes = "152x152" href = "../../favicons/apple-icon-152x152.png">
-  <link rel = "apple-touch-icon" sizes = "180x180" href = "../../favicons/apple-icon-180x180.png">
-  <link rel = "icon" type = "image/png" sizes = "192x192"  href = "../../favicons/android-icon-192x192.png">
-  <link rel = "icon" type = "image/png" sizes = "32x32" href = "../../favicons/favicon-32x32.png">
-  <link rel = "icon" type = "image/png" sizes = "96x96" href = "../../favicons/favicon-96x96.png">
-  <link rel = "icon" type = "image/png" sizes = "16x16" href = "../../favicons/favicon-16x16.png">
-  <link rel = "manifest" href = "../../favicons/manifest.json">
+  <link rel = "apple-touch-icon" sizes = "57x57" href = "../favicons/apple-icon-57x57.png">
+  <link rel = "apple-touch-icon" sizes = "60x60" href = "../favicons/apple-icon-60x60.png">
+  <link rel = "apple-touch-icon" sizes = "72x72" href = "../favicons/apple-icon-72x72.png">
+  <link rel = "apple-touch-icon" sizes = "76x76" href = "../favicons/apple-icon-76x76.png">
+  <link rel = "apple-touch-icon" sizes = "114x114" href = "../favicons/apple-icon-114x114.png">
+  <link rel = "apple-touch-icon" sizes = "120x120" href = "../favicons/apple-icon-120x120.png">
+  <link rel = "apple-touch-icon" sizes = "144x144" href = "../favicons/apple-icon-144x144.png">
+  <link rel = "apple-touch-icon" sizes = "152x152" href = "../favicons/apple-icon-152x152.png">
+  <link rel = "apple-touch-icon" sizes = "180x180" href = "../favicons/apple-icon-180x180.png">
+  <link rel = "icon" type = "image/png" sizes = "192x192"  href = "../favicons/android-icon-192x192.png">
+  <link rel = "icon" type = "image/png" sizes = "32x32" href = "../favicons/favicon-32x32.png">
+  <link rel = "icon" type = "image/png" sizes = "96x96" href = "../favicons/favicon-96x96.png">
+  <link rel = "icon" type = "image/png" sizes = "16x16" href = "../favicons/favicon-16x16.png">
+  <link rel = "manifest" href = "../favicons/manifest.json">
   <meta name = "msapplication-TileColor" content = "#ffffff">
   <meta name = "msapplication-TileImage" content = "/ms-icon-144x144.png">
   <meta name = "theme-color" content = "#ffffff">
 
   <!-- BOOTSTRAP -->
-  <link rel = "stylesheet" type = "text/css" href = "../../includes/bootstrap/css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "../includes/bootstrap/css/bootstrap.min.css">
 
   <!-- ROBOTO FONT -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -76,14 +76,13 @@
       width: 100%;
       max-width: 33%;
       display: inline-table;
-      border-spacing: 45px;
     }
 
     .gallery-item-piece {
       width: 100%;
       padding-top: 120%;
       border-radius: 50px 50px 0 0;
-      background-size: 150px !important;
+      background-size: 40% !important;
     }
 
     .gallery-item-tag {
@@ -98,6 +97,10 @@
       font-size: 0.75vw;
       font-weight: 500;
       letter-spacing: .1rem;
+    }
+
+    .gallery-item-piece, .gallery-item-tag {
+      cursor: pointer;
     }
 
     .gallery-item-tag p {
@@ -140,6 +143,15 @@
         max-width: 100%;
       }
 
+      .mobile-friendly-multigallery {
+        height: 100vh !important;
+        display: inline-table !important;
+        transform: unset !important;
+        left: unset !important;
+        top: unset !important;
+        position: relative !important;
+      }
+
       #gallery, .gallery-item {
         border-spacing: 20px;
       }
@@ -157,21 +169,12 @@
 </head>
 
 <body>
-
   <div id = "gallery-container">
-    <div id = "gallery">
-
-        <div class = "gallery-item animated fade">
-          <div class = "gallery-item-piece" style = "background: url('arizona.gif')"></div>
-          <div class = "gallery-item-tag">
-            <p>Arizona</p>
-            &#10046;&nbsp;Zeeshan Hanif&nbsp;&#10046;
-          </div>
-        </div>
-
-    </div>
+    <div id = "gallery"></div>
   </div>
-
 </body>
 
 </html>
+
+<script src = "../scripts/gallery.json" charset = "UTF-8"></script>
+<script src = "../scripts/gallery.js" charset = "UTF-8"></script>
