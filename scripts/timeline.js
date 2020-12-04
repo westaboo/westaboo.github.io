@@ -131,7 +131,7 @@ function _createItemContent(item) {
 
   item_content.innerHTML = _createGap() + [
     _createItemHeader(item.title, item.dates),
-    _createItemDescription(item.description),
+    item.description != null ? _createItemDescription(item.description) : "",
     _createItemLink(item.link),
   ].join(_createGap());
 
