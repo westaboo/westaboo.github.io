@@ -4,12 +4,12 @@ _timeline_art = {
   "format": "timeline",
   "items": [
     {
-      "title": "The Kent Collection",
+      "title": "Kent",
       "dates": "June 2019",
       "description": "A collection of geometric art pieces I designed to commemorate the experiences I had studying abroad in Europe. The collection is heavily influenced by the geometric and abstract patterns found in Islamic artwork; every piece focuses on a city, specifically the Islamic influence I encountered while in that city.",
       "link": {
         "text": "View Gallery",
-        "url": "./gallery?g=kent"
+        "url": "./gallery/?g=kent"
       }
     },
     {
@@ -18,7 +18,7 @@ _timeline_art = {
       "description": "This is a meme.",
       "link": {
         "text": "View Gif",
-        "url": "./gallery?g=arizona"
+        "url": "./gallery/?g=arizona"
       }
     }
   ]

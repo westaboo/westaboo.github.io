@@ -2,7 +2,9 @@ let GALLERY_QUERY_PARAM = "g";
 let DEFAULT_SIZE = "150px";
 let DEFAULT_COLOR = "#000";
 
-populateGallery(getGalleryQueryParam());
+let gallery = getGalleryQueryParam();
+populateGalleryTitle(gallery);
+populateGallery(gallery);
 
 /****************************** HELPER FUNCTIONS ******************************/
 
@@ -95,6 +97,16 @@ function populateGallery(gallery_name) {
     gallery_element.setAttribute("class", "mobile-friendly-multigallery");
   }
   gallery_element.innerHTML = _createItems(gallery.items);
+}
+
+function populateGalleryTitle(gallery_name) {
+  let gallery = _getGallery(gallery_name);
+  let title = gallery.title != null ? gallery.title : "Zeeshan Hanif";
+  if (typeof title !== "string") {
+    throw "gallery title must be string.";
+  }
+
+  document.getElementById("gallery-title").innerHTML = title;
 }
 
 function _getParameterByName(name, url = window.location.href) {

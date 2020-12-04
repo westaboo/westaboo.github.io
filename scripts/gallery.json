@@ -4,7 +4,7 @@ _gallery = {
   "format": "gallery",
   "galleryMap": {
     "kent" : {
-      "title": "The Kent Collection",
+      "title": "Kent",
       "items": [
         {
           "name": "Barcelona",
