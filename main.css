@@ -38,36 +38,37 @@ h1, h2 {
 }
 
 #cd-timeline::before {
-  background: #48739d !important;
-  width: 10px;
+  background: #032775 !important;
+  width: 12px;
   border-radius: 5em 5em 0 0;
-  margin-left: -5px !important;
-}
-
-#code {
-  margin-top: -18%;
-  z-index: 2;
-  margin-bottom: -8%;
-}
-
-.code-color {
-  color: #536f8a;
+  margin-left: -6px !important;
 }
 
 #contact-info {
   padding: 30px 15%;
+  position: relative;
+  z-index: 1;
 }
 
 #contact-info a {
-  color: #00b1a2;
+  color: #032775;
   font-weight: normal;
 }
 
-.intro-link:hover {
-  background: #3cad9c;
+#contact-info a i {
+  background: #032775;
+  color: white;
+  border-radius:
+  100%;
+  padding: 10px;
 }
 
-#p-text {
+.intro-link:hover {
+  background: #021e5f;
+}
+
+.p-text {
+  color: #060e21;
   font-size: 20px;
 }
 
@@ -75,7 +76,7 @@ h1, h2 {
   margin-top: 40px;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .statement {
@@ -83,19 +84,19 @@ h1, h2 {
 }
 
 .statement-purple {
-  background-color: #8b6698;
+  background-color: #690575;
 }
 
 .statement-purple:hover {
-  background-color: #795686;
+  background-color: #560261;
 }
 
-.statement-green {
-  background-color: #3cbba8;
+.statement-blue {
+  background-color: #032775;
 }
 
-.statement-green:hover {
-  background-color: #3cad9c;
+.statement-blue:hover {
+  background-color: #021e5f;
 }
 
 .statement-link {
@@ -114,6 +115,7 @@ h1, h2 {
 .statement-link-container {
   text-align: center;
   margin: 50px 0 !important;
+  z-index: 1;
 }
 
 .statement-footer-text {
@@ -124,6 +126,9 @@ h1, h2 {
 
 #timeline {
   background: url('./images/timeline-background.gif');
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
 }
 
 .timeline-header {
@@ -146,7 +151,7 @@ h1, h2 {
 .timeline-description {
   font-size: 18px;
   padding: 0 15px;
-  color: #536f8a;
+  color: #060e21;
 }
 
 .timeline-gap {
@@ -166,7 +171,7 @@ h1, h2 {
   margin: auto;
   transition: .2s background;
   padding: 22px 0;
-  background-color: #48739d;
+  background-color: #032775;
   border-radius: 5em;
   cursor: pointer;
 }
@@ -174,14 +179,14 @@ h1, h2 {
 .timeline-link:hover, .timeline-link:active, .timeline-link:focus {
   color: white;
   text-decoration: none;
-  background-color: #3e6994;
+  background-color: #021e5f;
 }
 
 .timeline-navbar {
   width: 100%;
   height: auto;
   list-style-type: none;
-  background: linear-gradient(rgba(72, 157, 144,0.8), rgba(0,0,0,0));
+  background: linear-gradient(rgb(0,0,0,0.15), rgba(0,0,0,0));
   margin-bottom: -30px;
   padding: 20px 0;
 }
