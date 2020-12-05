@@ -4,6 +4,15 @@ _timeline_projects = {
   "format": "timeline",
   "items": [
     {
+      "title": "Cookie to Biscuit",
+      "dates": "September 2020",
+      "description": "Chrome browser extension that replaces the word cookie with biscuit on all British websites.",
+      "link": {
+        "text": "View extension",
+        "url": "https://chrome.google.com/webstore/detail/cookie-to-biscuit/jhmahajhgohclmacjfaojcpaijlbcndo?hl=en"
+      }
+    },
+    {
       "title": "Cinematcha",
       "dates": "Jan 2018 - Mar 2018",
       "description": [
