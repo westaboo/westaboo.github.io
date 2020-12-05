@@ -74,7 +74,7 @@
       height: auto;
       margin-top: 0px;
       position: fixed;
-      z-index: 0;
+      z-index: -1;
     }
 
     .cursor {
@@ -93,9 +93,11 @@
     }
 
     #intro {
+      position: relative;
       height: 100vh;
       background: linear-gradient(0deg, #de99c6 0%, #4171d4 82%);
       color: white;
+      z-index: 2;
     }
 
     #intro-bottom {
@@ -106,6 +108,7 @@
       background-repeat: repeat-x;
       position: absolute;
       bottom: 0;
+      z-index: -1;
     }
 
     .intro-link-container {
