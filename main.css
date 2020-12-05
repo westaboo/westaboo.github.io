@@ -47,7 +47,7 @@ h1, h2 {
 #contact-info {
   padding: 30px 15%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #contact-info a {
@@ -76,7 +76,7 @@ h1, h2 {
   margin-top: 40px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .statement {
@@ -115,7 +115,8 @@ h1, h2 {
 .statement-link-container {
   text-align: center;
   margin: 50px 0 !important;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .statement-footer-text {
@@ -128,7 +129,7 @@ h1, h2 {
   background: url('./images/timeline-background.gif');
   background-attachment: fixed;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .timeline-header {
